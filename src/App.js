@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // import pages
-// import Home from './pages/Home';
+import Home from './pages/Home';
 // import About from './pages/About';
 // import Services from './pages/Services';
 // import Contact from './pages/Contact';
@@ -20,10 +20,7 @@ function App() {
         <Suspense fallback={<div />}>
           <Navbar />
         </Suspense>
-        {/* <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/services" component={Services} />
-        <Route exact path="/contact" component={Contact} /> */}
+        <Route exact path="/" component={Home} />
         <Suspense fallback={<div />}>
           {/* <Footer /> */}
         </Suspense>
