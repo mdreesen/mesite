@@ -7,58 +7,78 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.nav {
+.navbarMenu {
   width: 100%;
   font-size: 2rem;
   position: fixed;
   transition: 0.4s;
+  color: white;
+  text-align: left;
+  margin: 10px 30px;
 }
-.scrolling-active {
-  background-color: #013240;
-  transition: 0.5s;
-  visibility: visible;
+.navbarMenu:hover{
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
-/* Homepage Sections */
-.homepage-section-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
+
 section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  scroll-snap-align: start;
 }
 .sectionOne {
-  background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.5))
+  /* background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.5)) */
+  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
 }
-.sectionOne-header-container {
+.sectionTwo {
+  /* background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.5)) */
+  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+  height: 82vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-.typing {
+.sectionThree {
+  /* background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.5)) */
+  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+}
+
+.Typewriter {
   position: relative;
   margin-left: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 28px;
+  margin-left: 5px;
+  z-index: 1;
 }
-.typing::after {
-  content: "";
+
+.me-img {
+  margin: 35px 25px;
+  z-index: 2;
+  height: 200px;
+  border-radius: 50%;
+}
+.about-text {
+  width: 100%;
   position: absolute;
-  width: 1px;
-  height: 90%;
-  border-right: 2px solid white;
-  right: -5px;
-  animation: blink 0.5s infinite ease;
 }
-@keyframes blink{
-  0%{
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.about-p {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+  height: 40vh;
+  padding: 10px;
+  color: white;
+}
+p {
+  opacity: .7;
 }
 
 code {

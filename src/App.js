@@ -10,7 +10,7 @@ import Home from './pages/Home';
 
 // import components
 // import Navbar from './components/Navbar';
-const Navbar = lazy(() => import('./components/Navbar'))
+const NavbarMenu = lazy(() => import('./components/NavbarMenu'))
 // const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <div className="App">
         <Suspense fallback={<div />}>
-          <Navbar />
+          <NavbarMenu />
         </Suspense>
         <Route exact path="/" component={Home} />
         <Suspense fallback={<div />}>
