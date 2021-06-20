@@ -1,8 +1,12 @@
 import React from 'react';
 
+import ProjectCards from '../../components/ProjectCards';
+
 const Project = () => {
     return (
-        <div>Projects Page</div>
+        <div className="projects-page">
+            <ProjectCards />
+        </div>
     );
 };
 

@@ -29,7 +29,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className="homepage">
             <div className="homepage-section-container">
                 <section className="sectionOne">
                     <div className="sectionOne-header-container">
@@ -39,6 +39,11 @@ const Home = () => {
                                     write
                                         .typeString("React").pauseFor(3000).deleteAll()
                                         .typeString("Vue").pauseFor(3000).deleteAll()
+                                        .typeString("Handlebars").pauseFor(3000).deleteAll()
+                                        .typeString("CSS").pauseFor(3000).deleteAll()
+                                        .typeString("SCSS").pauseFor(3000).deleteAll()
+                                        .typeString("Bootstrap").pauseFor(3000).deleteAll()
+                                        .typeString("MaterialUI").pauseFor(3000).deleteAll()
                                         .typeString("Node").pauseFor(3000).deleteAll()
                                         .typeString("Javascript").pauseFor(3000).deleteAll()
                                         .typeString("Express").pauseFor(3000).deleteAll()
