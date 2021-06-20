@@ -22,6 +22,9 @@ import BloggerImage from '../assets/blogger.png';
 import SocialNetworkImage from '../assets/socialNetworkBackend.png';
 import ReadMeImage from '../assets/readmeGen.png';
 import about21ioImage from '../assets/21io.jpg';
+import wrenImage from '../assets/wren.png';
+import lrtImage from '../assets/lrt.png';
+import wbImage from '../assets/wildbeginnings.png';
 
 function ProjectSection({
     project: {
@@ -129,7 +132,34 @@ function Projects() {
         techUsed: "Javascript, Inquirer, fs."
     }
 
+    const wildBeginnings = {
+        name: "Wild Beginnings",
+        description: " A frontend React application, This is a portfolio site made for a Doula.",
+        about: "This project was a personal project where I utilized different frontend React packages to complete this application.",
+        techUsed: "Tech used: React, react-parallax, Bootstrap, CSS, JavaScript, heroku"
+    }
+
+    const lrt = {
+        name: "Little Red Truck Photography",
+        description: " A frontend React application, This is a portfolio site made for a Photographer.",
+        about: "This project was a personal project where I utilized different frontend React packages to complete this application.",
+        techUsed: "Tech used: React, react-slider, Bootstrap, CSS, JavaScript, heroku"
+    }
+
+    const wren = {
+        name: "Wren",
+        description: " A Full Stack application. This site I want to help birth workers have a better place to keep track of their clients, and for Mothers to have the community they need around them.",
+        about: "This project was a personal project where I utilized different frontend and backend technologies to complete this application.",
+        techUsed: "Tech used: React, graphQL, Bootstrap, CSS, JavaScript, AuthTokens(JWT), Express, Apollo-server, Mongoose, Mongodb"
+    }
+
     const projectList = [
+        {
+            project: wren,
+            image: wrenImage,
+            demo: 'http://wrenbird.herokuapp.com/',
+            github: 'https://github.com/mdreesen/wren'
+        },
         {
             project: about21io,
             image: about21ioImage,
@@ -141,6 +171,18 @@ function Projects() {
             image: SmollTalkImage,
             demo: "https://github.com/queen-stack/smollTalk",
             github: "https://limitless-shelf-64509.herokuapp.com/"
+        },
+        {
+            project: wildBeginnings,
+            image: wbImage,
+            demo: 'https://wild-beginnings.herokuapp.com/',
+            github: 'https://github.com/mdreesen/lovelace-site'
+        },
+        {
+            project: lrt,
+            image: lrtImage,
+            demo: 'https://tranquil-meadow-41399.herokuapp.com/',
+            github: 'https://github.com/mdreesen/little-red-truck'
         },
         {
             project: aboutBackendEcomm,

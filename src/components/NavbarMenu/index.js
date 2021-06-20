@@ -35,7 +35,6 @@ export default function FadeMenu() {
           <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to="/projects">Projects</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to="/contact">contact</Link></MenuItem>
-          {/* <MenuItem onClick={handleClose}>Logout</MenuItem> */}
         </Menu>
       </div>
     </div>

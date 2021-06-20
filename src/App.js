@@ -5,14 +5,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import pages
 import Home from './pages/Home';
 import Project from './pages/Project';
-// import About from './pages/About';
-// import Services from './pages/Services';
-// import Contact from './pages/Contact';
+import Contact from './pages/Contact';
 
-// import components
-// import Navbar from './components/Navbar';
 const NavbarMenu = lazy(() => import('./components/NavbarMenu'))
-// const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
   return (
@@ -23,6 +18,7 @@ function App() {
         </Suspense>
         <Route exact path="/" component={Home} />
         <Route exact path="/projects" component={Project} />
+        <Route exact path="/contact" component={Contact} />
         <Suspense fallback={<div />}>
           {/* <Footer /> */}
         </Suspense>

@@ -97,6 +97,46 @@ p {
   align-items: center;
 }
 
+/* Contact Page */
+.header {
+  height: 10vh;
+}
+.contact-text {
+  height: 45vh;
+}
+.icon-section {
+  height: 45vh;
+}
+.icon-container {
+  display: flex;
+}
+.icon {
+  width: 150px;
+  margin: 20px 40px;
+}
+.icon:hover {
+  color: white;
+}
+.fab:hover {
+  color: white;
+}
+.fas:hover{
+  color: white;
+}
+i {
+  margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .icon-container {
+    display: inline;
+  }
+  .icon {
+    margin: 20px 40px;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
