@@ -31,7 +31,7 @@ export default function FadeMenu() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <MenuItem onClick={handleClose}><Link to="/home">Home</Link></MenuItem>
+          <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to="/projects">Projects</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to="/contact">contact</Link></MenuItem>
         </Menu>

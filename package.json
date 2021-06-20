@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mdreesen.github.io/mesite/home",
   "name": "mesite",
+  "homepage": "https://mdreesen.github.io/mesite/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
