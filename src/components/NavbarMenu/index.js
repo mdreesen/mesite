@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
@@ -32,7 +31,7 @@ export default function FadeMenu() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
+          <MenuItem onClick={handleClose}><Link to="/home">Home</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to="/projects">Projects</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to="/contact">contact</Link></MenuItem>
         </Menu>
