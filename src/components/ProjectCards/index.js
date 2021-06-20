@@ -77,10 +77,10 @@ function ProjectSection({
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" color="primary">
-                        <Link to={github}>Github</Link>
+                        <a href={github}>Github</a>
                     </Button>
                     <Button size="small" color="primary">
-                        <Link to={demo}>Demo</Link>
+                        <a href={demo}>Demo</a>
                     </Button>
                 </CardActions>
             </Card>
