@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 
 const Contact = () => {
@@ -28,7 +27,7 @@ const Contact = () => {
                                         .typeString("Github").pauseFor(3000).start()
                                 }}
                             />
-                            <Link to={icon.gitHub}><i className="fab fa-github fa-4x" /></Link>
+                            <a href={icon.gitHub}><i className="fab fa-github fa-4x" /></a>
                         </div>
 
                         <div className="icon">
@@ -38,7 +37,7 @@ const Contact = () => {
                                         .typeString("LinkedIn").pauseFor(3000).start()
                                 }}
                             />
-                            <Link to={icon.linkedIn}><i className="fab fa-linkedin-in fa-4x" /></Link>
+                            <a href={icon.linkedIn}><i className="fab fa-linkedin-in fa-4x" /></a>
                         </div>
 
                         <div className="icon">
@@ -48,7 +47,7 @@ const Contact = () => {
                                         .typeString("Email").pauseFor(3000).start()
                                 }}
                             />
-                            <Link to={icon.linkedIn}><i className="fas fa-envelope-open fa-4x" /></Link>
+                            <a href={icon.linkedIn}><i className="fas fa-envelope-open fa-4x" /></a>
                         </div>
                     </div>
                 </section>

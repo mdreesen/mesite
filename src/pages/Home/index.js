@@ -63,7 +63,7 @@ const Home = () => {
                 </section>
                 <section className="sectionTwo">
                     <h1>About</h1>
-                    <img src={mePhoto} alt="Michael's Face Image" className="me-img" />
+                    <img src={mePhoto} alt="Michael's Face" className="me-img" />
                 </section>
                 <div className="about-text">
                     <div className="about-p lax" data-lax-opacity="0 1, 900 0">
