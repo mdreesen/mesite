@@ -132,7 +132,7 @@ i {
   .icon-container {
     display: inline;
     height: 46vh;
-    margin-bottom: 250px;
+    margin-bottom: 35vh;
   }
   .icon {
     margin: 40px 40px;
@@ -141,10 +141,10 @@ i {
     height: 10vh;
   }
   .contact-text {
-    height: 45vh;
+    height: 13vh;
   }
   .icon-section {
-    height: 45vh;
+    height: 77vh;
   }
 }
 
