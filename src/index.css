@@ -131,8 +131,8 @@ i {
 @media only screen and (max-width: 600px) {
   .icon-container {
     display: inline;
-    height: 46vh;
-    margin-bottom: 35vh;
+    height: 50vh;
+    margin-bottom: 25vh;
   }
   .icon {
     margin: 40px 40px;
