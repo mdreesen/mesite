@@ -6,7 +6,7 @@ const Contact = () => {
     const icon = {
         gitHub: "https://github.com/mdreesen",
         linkedIn: "https://www.linkedin.com/in/mdreesen/",
-        pinterest: "https://www.pinterest.com/michaeldreesen90/"
+        email: "mailto: mdreesen90@gmail.com"
     }
 
     return (
@@ -47,7 +47,7 @@ const Contact = () => {
                                         .typeString("Email").pauseFor(3000).start()
                                 }}
                             />
-                            <a href={icon.linkedIn}><i className="fas fa-envelope-open fa-4x" /></a>
+                            <a href={icon.email}><i className="fas fa-envelope-open fa-4x" /></a>
                         </div>
                     </div>
                 </section>
