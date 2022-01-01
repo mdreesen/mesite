@@ -15,6 +15,7 @@ import Grid from '@material-ui/core/Grid';
 
 
 // import images
+import Northerlights from '../assets/northerlights.png';
 import SmollTalkImage from '../assets/smollTalk.png';
 import EcommBackendImage from '../assets/backendEcomm.png';
 import BloggerImage from '../assets/blogger.png';
@@ -89,6 +90,13 @@ function ProjectSection({
 
 function Projects() {
 
+    const northernlights = {
+        name: "Northern Lights",
+        description: "Property management company's rental to see more details about the property.",
+        about: "A frontend application made from React",
+        techUsed: "Tech used: React, CSS, Bootstrap, react-video-js-player, react-scrollmagic, JavaScript, react-rellax, luxon, aos"
+    }
+
     const about21io = {
         name: "21io",
         description: " A MERN stack application, 21io is an application that allows it's users to login, search for & save movies to a library then pay for a movie if they choose to stream it when online.",
@@ -160,6 +168,12 @@ function Projects() {
             github: 'https://github.com/mdreesen/wren'
         },
         {
+            project: northernlights,
+            image: Northerlights,
+            demo: 'https://infallible-shaw-eead0a.netlify.app/',
+            github: 'https://github.com/mdreesen/northernlights'
+        },
+        {
             project: about21io,
             image: about21ioImage,
             demo: 'https://movie-21io.herokuapp.com/',
@@ -174,7 +188,7 @@ function Projects() {
         {
             project: wildBeginnings,
             image: wbImage,
-            demo: 'https://wild-beginnings.herokuapp.com/',
+            demo: 'https://www.wildbeginningsbirth.com/',
             github: 'https://github.com/mdreesen/lovelace-site'
         },
         {

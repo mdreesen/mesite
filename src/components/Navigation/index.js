@@ -6,6 +6,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './navigation.css';
 
+import logo from '../assets/logo.png';
+
 
 const Navigation = () => {
 
@@ -27,7 +29,7 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" variant="light">
             <Container>
-                <Navbar.Brand href="#home">DREESEN</Navbar.Brand>
+                <Navbar.Brand href="/"><img className='nav-logo' alt="" src={logo}></img></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>

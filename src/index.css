@@ -33,10 +33,10 @@ section {
   color: white;
 }
 .homepage {
-  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+  background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%);
 }
 .homepage-section-container {
-  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+  background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%);
 }
 .sectionTwo {
   height: 50vh;
@@ -69,7 +69,7 @@ section {
 }
 .about-p {
   position: absolute;
-  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+  background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%);
   height: 40vh;
   padding: 10px;
   color: white;
@@ -83,7 +83,7 @@ p {
 .projects-page {
   /* background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(155,155,155,1) 100%); */
   /* background: linear-gradient(90deg, rgba(19,78,82,1) 0%, rgba(113,178,128,1) 100%); */
-  background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+  background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%);
 
 }
 .project-cards {

@@ -9,3 +9,9 @@
 .nav-link {
     color: black;
 }
+
+.nav-logo {
+    height: 12vh;
+    border-radius: 50px;
+    position: absolute;
+}
