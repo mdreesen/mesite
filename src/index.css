@@ -20,8 +20,7 @@ body {
   color: black;
 }
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none;;
 }
 
 
@@ -113,15 +112,22 @@ p {
 .icon {
   width: 150px;
   margin: 20px 40px;
+  color: white !important;
 }
 .icon:hover {
   color: white;
 }
+.fab {
+  color: white !important;
+}
+.fas {
+  color: white !important;
+}
 .fab:hover {
-  color: white;
+  color: black !important;
 }
 .fas:hover{
-  color: white;
+  color: white !important;
 }
 i {
   margin-top: 15px;

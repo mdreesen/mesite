@@ -2,6 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Parallax from 'react-rellax';
 import lax from 'lax.js'
+import Particles from '../../components/Particles';
 
 import mePhoto from '../../components/assets/meImage.JPG';
 
@@ -32,6 +33,7 @@ const Home = () => {
         <div className="homepage" id="particles-js">
             <div className="homepage-section-container">
                 <section className="sectionOne">
+                <Particles/>
                     <div className="sectionOne-header-container">
                         <Parallax speed={-5}><h1>Welcome</h1>
                             <Typewriter
