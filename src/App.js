@@ -7,9 +7,7 @@ import Home from './pages/Home';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
 
-const NavbarMenu = lazy(() => import('./components/NavbarMenu'))
 const Navigation = lazy(() => import('./components/Navigation'))
-
 
 function App() {
   return (
