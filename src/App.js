@@ -8,13 +8,16 @@ import Project from './pages/Project';
 import Contact from './pages/Contact';
 
 const NavbarMenu = lazy(() => import('./components/NavbarMenu'))
+const Navigation = lazy(() => import('./components/Navigation'))
+
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Suspense fallback={<div />}>
-          <NavbarMenu />
+          {/* <NavbarMenu /> */}
+          <Navigation/>
         </Suspense>
         <Route exact path="/" component={Home} />
         <Route exact path="/projects" component={Project} />

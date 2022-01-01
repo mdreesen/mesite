@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #C3CEDA;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-link {
+    color: black;
+}
