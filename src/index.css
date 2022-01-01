@@ -152,6 +152,10 @@ i {
   .icon-section {
     height: 77vh;
   }
+
+  .about-p {
+    height: 75vh;
+  }
 }
 
 code {
