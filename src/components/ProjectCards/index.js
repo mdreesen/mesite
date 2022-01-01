@@ -22,7 +22,7 @@ import BloggerImage from '../assets/blogger.png';
 import SocialNetworkImage from '../assets/socialNetworkBackend.png';
 import ReadMeImage from '../assets/readmeGen.png';
 import about21ioImage from '../assets/21io.jpg';
-import wrenImage from '../assets/wren.png';
+// import wrenImage from '../assets/wren.png';
 import lrtImage from '../assets/lrt.png';
 import wbImage from '../assets/wildbeginnings.png';
 
@@ -153,20 +153,20 @@ function Projects() {
         techUsed: "Tech used: React, react-slider, Bootstrap, CSS, JavaScript, heroku"
     }
 
-    const wren = {
-        name: "Wren",
-        description: " A Full Stack application. This site I want to help birth workers have a better place to keep track of their clients, and for Mothers to have the community they need around them.",
-        about: "This project was a personal project where I utilized different frontend and backend technologies to complete this application.",
-        techUsed: "Tech used: React, graphQL, Bootstrap, CSS, JavaScript, AuthTokens(JWT), Express, Apollo-server, Mongoose, Mongodb"
-    }
+    // const wren = {
+    //     name: "Wren",
+    //     description: " A Full Stack application. This site I want to help birth workers have a better place to keep track of their clients, and for Mothers to have the community they need around them.",
+    //     about: "This project was a personal project where I utilized different frontend and backend technologies to complete this application.",
+    //     techUsed: "Tech used: React, graphQL, Bootstrap, CSS, JavaScript, AuthTokens(JWT), Express, Apollo-server, Mongoose, Mongodb"
+    // }
 
     const projectList = [
-        {
-            project: wren,
-            image: wrenImage,
-            demo: 'http://wrenbird.herokuapp.com/',
-            github: 'https://github.com/mdreesen/wren'
-        },
+        // {
+        //     project: wren,
+        //     image: wrenImage,
+        //     demo: 'http://wrenbird.herokuapp.com/',
+        //     github: 'https://github.com/mdreesen/wren'
+        // },
         {
             project: northernlights,
             image: Northerlights,

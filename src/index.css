@@ -37,6 +37,16 @@ section {
 .homepage-section-container {
   background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%);
 }
+
+.sectionOne-header-container {
+  transition: .8s;
+}
+
+.disappear {
+  opacity: 0;
+  transition: .8s;
+}
+
 .sectionTwo {
   height: 50vh;
   display: flex;

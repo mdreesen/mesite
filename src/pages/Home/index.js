@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import Parallax from 'react-rellax';
 import lax from 'lax.js'
@@ -8,6 +8,14 @@ import mePhoto from '../../components/assets/meImage.JPG';
 
 
 const Home = () => {
+
+    const [hero, setHero] = useState(false);
+
+    const background = () => {
+        return window.scrollY >= 280 ? setHero(true) : setHero(false)
+    }
+
+    window.addEventListener('scroll', background)
 
     window.onload = function () {
         lax.init()
@@ -34,7 +42,7 @@ const Home = () => {
             <div className="homepage-section-container">
                 <section className="sectionOne">
                 <Particles/>
-                    <div className="sectionOne-header-container">
+                    <div className={hero ? 'disappear' : "sectionOne-header-container"}>
                         <Parallax speed={-5}><h1>Welcome</h1>
                             <Typewriter
                                 onInit={(write) => {
