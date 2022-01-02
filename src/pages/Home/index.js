@@ -4,7 +4,7 @@ import Parallax from 'react-rellax';
 import lax from 'lax.js'
 import Particles from '../../components/Particles';
 
-import mePhoto from '../../components/assets/meImage.JPG';
+import mePhoto from '../../components/assets/meImage.webp';
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     const [hero, setHero] = useState(false);
 
     const background = () => {
-        return window.scrollY >= 280 ? setHero(true) : setHero(false)
+        return window.scrollY >= 200 ? setHero(true) : setHero(false)
     }
 
     window.addEventListener('scroll', background)
@@ -41,7 +41,7 @@ const Home = () => {
         <div className="homepage" id="particles-js">
             <div className="homepage-section-container">
                 <section className="sectionOne">
-                <Particles/>
+                <Particles></Particles>
                     <div className={hero ? 'disappear' : "sectionOne-header-container"}>
                         <Parallax speed={-5}><h1>Welcome</h1>
                             <Typewriter

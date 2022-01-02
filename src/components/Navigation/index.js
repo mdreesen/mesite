@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './navigation.css';
 
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 
 
 const Navigation = () => {
@@ -34,7 +34,7 @@ const Navigation = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
                         {
-                            NavLink.map(nav => <Nav.Link href={nav?.link}>{nav?.name}</Nav.Link>)
+                            NavLink.map(nav => <Nav.Link href={nav?.link} key={nav?.name}>{nav?.name}</Nav.Link>)
                         }
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

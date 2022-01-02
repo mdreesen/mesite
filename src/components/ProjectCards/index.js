@@ -15,16 +15,16 @@ import Grid from '@material-ui/core/Grid';
 
 
 // import images
-import Northerlights from '../assets/northerlights.png';
-import SmollTalkImage from '../assets/smollTalk.png';
-import EcommBackendImage from '../assets/backendEcomm.png';
-import BloggerImage from '../assets/blogger.png';
-import SocialNetworkImage from '../assets/socialNetworkBackend.png';
-import ReadMeImage from '../assets/readmeGen.png';
-import about21ioImage from '../assets/21io.jpg';
-// import wrenImage from '../assets/wren.png';
-import lrtImage from '../assets/lrt.png';
-import wbImage from '../assets/wildbeginnings.png';
+import Northerlights from '../assets/northerlights.webp';
+import SmollTalkImage from '../assets/smollTalk.webp';
+import EcommBackendImage from '../assets/backendEcomm.webp';
+import BloggerImage from '../assets/blogger.webp';
+import SocialNetworkImage from '../assets/socialNetworkBackend.webp';
+import ReadMeImage from '../assets/readmeGen.webp';
+import about21ioImage from '../assets/21io.webp';
+// import wrenImage from '../assets/wren.webp';
+import lrtImage from '../assets/lrt.webp';
+import wbImage from '../assets/wildbeginnings.webp';
 
 function ProjectSection({
     project: {
@@ -232,7 +232,7 @@ function Projects() {
             <div className="projectContainer">
 
             {
-                projectList.map((info) =>
+                projectList.map((info, index) =>
                     <Grid
                         container
                         spacing={0}
@@ -240,6 +240,7 @@ function Projects() {
                         alignItems="center"
                         justify="center"
                         style={{ minHeight: '75vh' }}
+                        key={`key-${index}`}
                     >
                         <Grid>
                             <ProjectSection
