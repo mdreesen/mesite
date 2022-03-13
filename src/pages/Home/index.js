@@ -39,16 +39,17 @@ const Home = () => {
 
     return (
         <div className="homepage" id="particles-js">
+            <Particles></Particles>
             <div className="homepage-section-container">
                 <section className="sectionOne">
-                <Particles></Particles>
                     <div className={hero ? 'disappear' : "sectionOne-header-container"}>
-                        <Parallax speed={-5}><h1>Welcome</h1>
+                        <Parallax speed={-3}><h1>Welcome</h1>
                             <Typewriter
                                 onInit={(write) => {
                                     write
-                                        .typeString("React").pauseFor(3000).deleteAll()
-                                        .typeString("Vue").pauseFor(3000).deleteAll()
+                                        .typeString("React.js").pauseFor(3000).deleteAll()
+                                        .typeString("Vue.js").pauseFor(3000).deleteAll()
+                                        .typeString("Next.js").pauseFor(3000).deleteAll()
                                         .typeString("Handlebars").pauseFor(3000).deleteAll()
                                         .typeString("CSS").pauseFor(3000).deleteAll()
                                         .typeString("SCSS").pauseFor(3000).deleteAll()
@@ -64,7 +65,7 @@ const Home = () => {
                                         .typeString("Session").pauseFor(3000).deleteAll()
                                         .typeString("MySql").pauseFor(3000).deleteAll()
                                         .typeString("Postgres").pauseFor(3000).deleteAll()
-                                        .typeString("Mongodb").pauseFor(3000).deleteAll()
+                                        .typeString("MongoDB").pauseFor(3000).deleteAll()
                                         .typeString("Take a look at some projects!").pauseFor(3000).start()
                                 }}
                             />

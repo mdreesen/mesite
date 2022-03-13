@@ -53,6 +53,7 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: black;
 }
 
 
@@ -75,14 +76,16 @@ section {
 .about-text {
   width: 100%;
   position: absolute;
+  background-color: black;
 }
 .about-p {
   position: absolute;
-  background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%);
-  height: 40vh;
+  /* background: linear-gradient(90deg, rgba(7,19,48,1) 2%, rgba(21,39,80,1) 100%); */
+  height: 50vh;
   padding: 10px;
   color: white;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: black;
 }
 p {
   opacity: .7;
