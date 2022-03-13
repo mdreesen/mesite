@@ -86,8 +86,7 @@ section {
   height: 50vh;
   padding: 10px;
   color: white;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  background-color: black;
+  font-family: Archivo, "Helvetiva Neue", Helvetica, Aria, sans-serif;  background-color: black;
   font-size: 1.3rem;
   font-weight: 300;
 }
@@ -171,17 +170,18 @@ i {
   }
 
   .about-p {
-    height: 120vh;
+    height: 50vh;
+    font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 380px) {
   .about-p {
-    height: 102vh;
+    height: 50vh;
+    font-size: small;
   }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Archivo, "Helvetiva Neue", Helvetica, Aria, sans-serif;
 }
