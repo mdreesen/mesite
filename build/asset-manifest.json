@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5581adf1.chunk.css",
+    "main.css": "/static/css/main.ba0f9cf6.chunk.css",
     "main.js": "/static/js/main.da48d072.chunk.js",
     "main.js.map": "/static/js/main.da48d072.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.eee8e5c6.js",
@@ -20,7 +20,7 @@
     "static/css/2.ae9e5f60.chunk.css.map": "/static/css/2.ae9e5f60.chunk.css.map",
     "static/css/3.038361d8.chunk.css.map": "/static/css/3.038361d8.chunk.css.map",
     "static/css/4.ddfb1de4.chunk.css.map": "/static/css/4.ddfb1de4.chunk.css.map",
-    "static/css/main.5581adf1.chunk.css.map": "/static/css/main.5581adf1.chunk.css.map",
+    "static/css/main.ba0f9cf6.chunk.css.map": "/static/css/main.ba0f9cf6.chunk.css.map",
     "static/js/2.a2def41e.chunk.js.LICENSE.txt": "/static/js/2.a2def41e.chunk.js.LICENSE.txt",
     "static/js/3.63d36cdd.chunk.js.LICENSE.txt": "/static/js/3.63d36cdd.chunk.js.LICENSE.txt",
     "static/media/21io.95530b4e.webp": "/static/media/21io.95530b4e.webp",
@@ -39,7 +39,7 @@
     "static/js/runtime-main.eee8e5c6.js",
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.a2def41e.chunk.js",
-    "static/css/main.5581adf1.chunk.css",
+    "static/css/main.ba0f9cf6.chunk.css",
     "static/js/main.da48d072.chunk.js"
   ]
 }

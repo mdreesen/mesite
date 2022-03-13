@@ -175,6 +175,12 @@ i {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .about-p {
+    height: 102vh;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
