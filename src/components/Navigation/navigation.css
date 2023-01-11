@@ -1,7 +1,12 @@
 .navbar {
-    background-color: #C3CEDA;
-    z-index: 100;
+    z-index: 9999;
 }
+
+.scrolling-active {
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
 
 .navbar-collapse {
     justify-content: end;
@@ -16,3 +21,27 @@
     border-radius: 50px;
     position: absolute;
 }
+
+.navbarMenu {
+    width: 100%;
+    font-size: 2rem;
+    position: fixed;
+    transition: 0.4s;
+    color: white;
+    text-align: left;
+    margin: 10px 30px;
+  }
+  .navbarMenu:hover{
+    color: black;
+  }
+
+@media only screen and (max-width: 830px) {
+    .navbar-toggler {
+        display: block;
+        border: none;
+        z-index: 9999;
+    }
+    .desktop_links {
+        display: none;
+    }
+  }

@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import './project.css';
 
 import ProjectCards from '../../components/ProjectCards';
 

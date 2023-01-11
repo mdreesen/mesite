@@ -1,5 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import './contact.css';
 
 const Contact = () => {
 
@@ -10,15 +11,17 @@ const Contact = () => {
     }
 
     return (
-        <div className="homepage">
-            <div className="homepage-section-container">
+        <div className="contact">
+            <div className="contact-section-container">
                 <section className="header">
                     <h1>Contact</h1>
                 </section>
-                <section className="contact-text">
+                <div className="contact-text">
                     <p>Pricing depends on the project.</p>
-                </section>
-                <section className="icon-section">
+                    <br />
+                    <p>Lets see what is the right fit for you!</p>
+                </div>
+                <div className="icon-section">
                     <div className="icon-container">
                         <div className="icon">
                             <Typewriter
@@ -50,7 +53,7 @@ const Contact = () => {
                             <a href={icon.email}><i className="fas fa-envelope-open fa-4x" /></a>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     );

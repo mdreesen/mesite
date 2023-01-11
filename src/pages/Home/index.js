@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import Parallax from 'react-rellax';
 import lax from 'lax.js'
 import Particles from '../../components/Particles';
+import './home.css';
 
 import mePhoto from '../../components/assets/meImage.webp';
 
@@ -36,6 +37,44 @@ const Home = () => {
         })
     };
 
+    const WelcomeSection = () => {
+        return (
+            <div className='welcome-section'>
+                <div>
+                    Hello there! I'm <span class="name">Michael</span>
+                </div>
+                <div>
+                    <span>Some of the things I know:</span>
+                    <Typewriter
+                        onInit={(write) => {
+                            write
+                                .typeString("React.js").pauseFor(3000).deleteAll()
+                                .typeString("Vue.js").pauseFor(3000).deleteAll()
+                                .typeString("Next.js").pauseFor(3000).deleteAll()
+                                .typeString("Handlebars").pauseFor(3000).deleteAll()
+                                .typeString("CSS").pauseFor(3000).deleteAll()
+                                .typeString("SCSS").pauseFor(3000).deleteAll()
+                                .typeString("Bootstrap").pauseFor(3000).deleteAll()
+                                .typeString("MaterialUI").pauseFor(3000).deleteAll()
+                                .typeString("Node").pauseFor(3000).deleteAll()
+                                .typeString("Javascript").pauseFor(3000).deleteAll()
+                                .typeString("Express").pauseFor(3000).deleteAll()
+                                .typeString("GraphQL").pauseFor(3000).deleteAll()
+                                .typeString("Sequelize").pauseFor(3000).deleteAll()
+                                .typeString("Mongoose").pauseFor(3000).deleteAll()
+                                .typeString("JWT").pauseFor(3000).deleteAll()
+                                .typeString("Session").pauseFor(3000).deleteAll()
+                                .typeString("MySql").pauseFor(3000).deleteAll()
+                                .typeString("Postgres").pauseFor(3000).deleteAll()
+                                .typeString("MongoDB").pauseFor(3000).deleteAll()
+                                .typeString("Check out some projects!").pauseFor(3000).start()
+                        }}
+                    />
+                </div>
+            </div>
+        )
+    }
+
 
     return (
         <div className="homepage" id="particles-js">
@@ -44,36 +83,12 @@ const Home = () => {
                 <section className="sectionOne">
                     <div className={hero ? 'disappear' : "sectionOne-header-container"}>
                         <Parallax speed={-3}><h1>Welcome</h1>
-                            <Typewriter
-                                onInit={(write) => {
-                                    write
-                                        .typeString("React.js").pauseFor(3000).deleteAll()
-                                        .typeString("Vue.js").pauseFor(3000).deleteAll()
-                                        .typeString("Next.js").pauseFor(3000).deleteAll()
-                                        .typeString("Handlebars").pauseFor(3000).deleteAll()
-                                        .typeString("CSS").pauseFor(3000).deleteAll()
-                                        .typeString("SCSS").pauseFor(3000).deleteAll()
-                                        .typeString("Bootstrap").pauseFor(3000).deleteAll()
-                                        .typeString("MaterialUI").pauseFor(3000).deleteAll()
-                                        .typeString("Node").pauseFor(3000).deleteAll()
-                                        .typeString("Javascript").pauseFor(3000).deleteAll()
-                                        .typeString("Express").pauseFor(3000).deleteAll()
-                                        .typeString("GraphQL").pauseFor(3000).deleteAll()
-                                        .typeString("Sequelize").pauseFor(3000).deleteAll()
-                                        .typeString("Mongoose").pauseFor(3000).deleteAll()
-                                        .typeString("JWT").pauseFor(3000).deleteAll()
-                                        .typeString("Session").pauseFor(3000).deleteAll()
-                                        .typeString("MySql").pauseFor(3000).deleteAll()
-                                        .typeString("Postgres").pauseFor(3000).deleteAll()
-                                        .typeString("MongoDB").pauseFor(3000).deleteAll()
-                                        .typeString("Take a look at some projects!").pauseFor(3000).start()
-                                }}
-                            />
+                           <WelcomeSection />
                         </Parallax>
                     </div>
                 </section>
                 <section className="sectionTwo">
-                    <h1>About</h1>
+                    <h1 className='about-header'>About</h1>
                     <img src={mePhoto} alt="Michael's Face" className="me-img" />
                 </section>
                 <div className="about-text">
