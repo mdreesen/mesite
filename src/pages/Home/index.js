@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import Parallax from 'react-rellax';
+// import Parallax from 'react-rellax';
 import lax from 'lax.js'
 import Particles from '../../components/Particles';
 import './home.css';
@@ -41,10 +41,12 @@ const Home = () => {
         return (
             <div className='welcome-section'>
                 <div>
-                    Hello there! I'm <span class="name">Michael</span>
+                    <span>Hello there! I'm <span className="name">MICHAEL</span></span>
+                    <br />
+                    <span>I'm a <span className="name">FULLSTACK DEVELOPER</span></span>
                 </div>
                 <div>
-                    <span>Some of the things I know:</span>
+                    <span>Some of the <span className='name'>CODING SKILLS</span> I know:</span>
                     <Typewriter
                         onInit={(write) => {
                             write
@@ -82,25 +84,25 @@ const Home = () => {
             <div className="homepage-section-container">
                 <section className="sectionOne">
                     <div className={hero ? 'disappear' : "sectionOne-header-container"}>
-                        <Parallax speed={-3}><h1>Welcome</h1>
-                           <WelcomeSection />
-                        </Parallax>
+                        <WelcomeSection />
+                        <div>
+                            <span>Scroll <span>DOWN</span> to see more</span>
+                        </div>
                     </div>
+
                 </section>
                 <section className="sectionTwo">
                     <h1 className='about-header'>About</h1>
                     <img src={mePhoto} alt="Michael's Face" className="me-img" />
                 </section>
-                <div className="about-text">
-                    <div className="about-p lax" data-lax-opacity="0 1, 900 0">
-                        Michael Dreesen started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years. He then graduated from Berkeley coding bootcamp earning his Full Stack Developer certification
-                        <br></br>
-                        <br /> Michael loves learning about technology and drives toward understanding of various technologies both at work and in his personal life. Michael works with various technical stacks including javascript, react, pSQL, Swagger, MAC
-                        OSX and Windows OS, as well as AWS products.
-                        <br />
-                        <br />When he’s not coding or working on breaking things, he enjoys hanging out with his family, utilizing the latest gaming products,
-                        or watching his football team win on Sundays (Go Bears!).
-                    </div>
+                <div className="about-p lax" data-lax-opacity="0 1, 900 0">
+                    Michael Dreesen started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years. He then graduated from Berkeley coding bootcamp earning his Full Stack Developer certification
+                    <br></br>
+                    <br /> Michael loves learning about technology and drives toward understanding of various technologies both at work and in his personal life. Michael works with various technical stacks including javascript, react, pSQL, Swagger, MAC
+                    OSX and Windows OS, as well as AWS products.
+                    <br />
+                    <br />When he’s not coding or working on breaking things, he enjoys hanging out with his family, utilizing the latest gaming products,
+                    or watching his football team win on Sundays (Go Bears!).
                 </div>
             </div>
         </div>

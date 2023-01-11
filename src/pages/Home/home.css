@@ -20,6 +20,8 @@
     flex-direction: row;
     row-gap: 20px;
     column-gap: 10vw;
+    align-items: baseline;
+    margin: 8vh 6vw;    
   }
 
   .name {
@@ -43,11 +45,11 @@
   
   .Typewriter {
     position: relative;
-    margin-left: 10px;
     justify-content: center;
     text-align: center;
     z-index: 1;
     font-weight: 200;
+    font-size: 1.5em;
   }
   
   .me-img {
@@ -62,7 +64,7 @@
   .about-text {
     width: 100%;
     position: absolute;
-  }
+  } 
   .about-p {
     display: flex;
     justify-content: center;
