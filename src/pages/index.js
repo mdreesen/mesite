@@ -1,6 +1,6 @@
 import Head from 'next/head'
 // import Image from 'next/image';
-import TypeWriter from '../components/TypeWriter';
+import Typewriter from 'typewriter-effect';
 import Particles from '../components/Particles';
 
 import { Inter } from '@next/font/google';
@@ -25,7 +25,31 @@ export default function Home() {
         </div>
         <div>
           <span>Some of the <span className={styles['name']}>CODING SKILLS</span> I know:</span>
-          <TypeWriter />
+          <Typewriter
+            onInit={(write) => {
+              write
+                .typeString("React.js").pauseFor(3000).deleteAll()
+                .typeString("Vue.js").pauseFor(3000).deleteAll()
+                .typeString("Next.js").pauseFor(3000).deleteAll()
+                .typeString("Handlebars").pauseFor(3000).deleteAll()
+                .typeString("CSS").pauseFor(3000).deleteAll()
+                .typeString("SCSS").pauseFor(3000).deleteAll()
+                .typeString("Bootstrap").pauseFor(3000).deleteAll()
+                .typeString("MaterialUI").pauseFor(3000).deleteAll()
+                .typeString("Node").pauseFor(3000).deleteAll()
+                .typeString("Javascript").pauseFor(3000).deleteAll()
+                .typeString("Express").pauseFor(3000).deleteAll()
+                .typeString("GraphQL").pauseFor(3000).deleteAll()
+                .typeString("Sequelize").pauseFor(3000).deleteAll()
+                .typeString("Mongoose").pauseFor(3000).deleteAll()
+                .typeString("JWT").pauseFor(3000).deleteAll()
+                .typeString("Session").pauseFor(3000).deleteAll()
+                .typeString("MySql").pauseFor(3000).deleteAll()
+                .typeString("Postgres").pauseFor(3000).deleteAll()
+                .typeString("MongoDB").pauseFor(3000).deleteAll()
+                .typeString("Check out some projects!").pauseFor(3000).start()
+            }}
+          />
         </div>
       </div>
     )
