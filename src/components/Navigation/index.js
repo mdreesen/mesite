@@ -22,7 +22,7 @@ const Navigation = () => {
     ];
 
     return (
-        <Navbar collapseOnSelect expand="lg" variant="dark" fixed='top'>
+        <Navbar className={styles['navbar']} collapseOnSelect expand="lg" variant="dark" fixed='top'>
             <Container>
                 {/* <Navbar.Brand href="/"><img className='nav-logo' alt="" src={logo}></img></Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

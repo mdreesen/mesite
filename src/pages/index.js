@@ -1,14 +1,12 @@
 import Head from 'next/head'
-// import Image from 'next/image';
+import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import Particles from '../components/Particles';
 
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 
-import Image from 'next/image';
-
-// import profilePic from '../public/me.png';
+import profilePic from '../../public/images/meImage.webp';
 
 const inter = Inter({ subsets: ['latin'] })
 // className={inter.className}
@@ -23,9 +21,10 @@ export default function Home() {
           <br />
           <span>I'm a <span className={styles['name']}>FULLSTACK DEVELOPER</span></span>
         </div>
-        <div>
-          <span>Some of the <span className={styles['name']}>CODING SKILLS</span> I know:</span>
+        <div className={styles['Typewriter']}>
+          <span className={styles['name']}>CODING SKILLS</span>
           <Typewriter
+            className={styles['Typewriter']}
             onInit={(write) => {
               write
                 .typeString("React.js").pauseFor(3000).deleteAll()
@@ -55,6 +54,19 @@ export default function Home() {
     )
   }
 
+  const aboutImage = (
+    <Image
+    className={styles['me-img']}
+      src={profilePic}
+      alt="Picture of Michael"
+      width={220}
+      height={220}
+      object-fit={"cover"}
+    // blurDataURL="data:..." automatically provided
+    // placeholder="blur" // Optional blur-up while loading
+    />
+  );
+
   return (
     <>
       <Head>
@@ -71,7 +83,7 @@ export default function Home() {
             <section className={styles['sectionOne']}>
               <div>
                 <WelcomeSection />
-                <div>
+                <div className={styles['center']}>
                   <span>Scroll <span>DOWN</span> to see more</span>
                 </div>
               </div>
@@ -79,7 +91,7 @@ export default function Home() {
             </section>
             <section className={styles['sectionTwo']}>
               <h1 className={styles['about-header']}>About</h1>
-              {/* <img src={mePhoto} alt="Michael's Face" className="me-img" /> */}
+              {aboutImage}
             </section>
             <div className={styles['about-p ']} data-lax-opacity="0 1, 900 0">
               Michael Dreesen started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years. He then graduated from Berkeley coding bootcamp earning his Full Stack Developer certification
