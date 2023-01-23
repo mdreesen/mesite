@@ -59,7 +59,7 @@ export default function Home() {
     className={styles['me-img']}
       src={profilePic}
       alt="Picture of Michael"
-      width={220}
+      width={'fit-content'}
       height={220}
       object-fit={"cover"}
     // blurDataURL="data:..." automatically provided
