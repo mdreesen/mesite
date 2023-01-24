@@ -56,7 +56,7 @@ export default function Home() {
 
   const aboutImage = (
     <Image
-    className={styles['me-img']}
+      className={styles['me-img']}
       src={profilePic}
       alt="Picture of Michael"
       width={'fit-content'}
@@ -80,28 +80,42 @@ export default function Home() {
         <div className={styles['homepage']} id="particles-js">
           <Particles></Particles>
           <div className={styles['homepage-section-container']}>
-            <section className={styles['sectionOne']}>
-              <div>
+            <section>
+              <div className={styles.sectionOne}>
                 <WelcomeSection />
                 <div className={styles['center']}>
-                  <span>Scroll <span>DOWN</span> to see more</span>
+                  <span>About Me ↓</span>
                 </div>
               </div>
 
             </section>
             <section className={styles['sectionTwo']}>
-              <h1 className={styles['about-header']}>About</h1>
+            <div className={styles['aboutTitle']}>
+            <h1 className={styles['about-header']}>About</h1>
               {aboutImage}
-            </section>
-            <div className={styles['about-p ']} data-lax-opacity="0 1, 900 0">
-              Michael Dreesen started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years. He then graduated from Berkeley coding bootcamp earning his Full Stack Developer certification
-              <br></br>
-              <br /> Michael loves learning about technology and drives toward understanding of various technologies both at work and in his personal life. Michael works with various technical stacks including javascript, react, pSQL, Swagger, MAC
-              OSX and Windows OS, as well as AWS products.
-              <br />
-              <br />When he’s not coding or working on breaking things, he enjoys hanging out with his family, utilizing the latest gaming products,
-              or watching his football team win on Sundays (Go Bears!).
             </div>
+            <h2 className={styles['about-title']}>A Bit About Me</h2>
+              <div className={styles['about-p']} data-lax-opacity="0 1, 900 0">
+                I started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years. I then graduated from Berkeley coding bootcamp earning my Full Stack Developer certification
+                <br></br>
+                <br /> I love learning about technology and drive toward understanding of various technologies both at work and in my personal life. I love working with various technical stacks including javascript, react.js, next.js, pSQL, Swagger, MAC
+                OSX and Windows OS, as well as AWS products.
+                <br />
+                <br />When he’s not coding or working on breaking things, he enjoys hanging out with his family, utilizing the latest gaming products,
+                or watching his football team win on Sundays (Go Bears!).
+              </div>
+
+              <h2 className={styles['about-title']}>Coding Skill I Use</h2>
+              <div className={styles['about-p']} data-lax-opacity="0 1, 900 0">
+                I primarily use Javascript, but picking up a new framework isn't a problem. Learning new things is what challenges us to be better and more creative.
+              <br/>
+              <br />
+               The frontend framework that I love to use is next.js as this makes it easier to work with and give development flexibility with cool built in functions and functionality. This framework also gives us easy access for manageable SEO configuration.
+                <br />
+                <br />
+              For backend, I like the flexability MongoDB provides is awesome and easy to configure but there are cases when using a SQL database would be a benefit. Both have great benefits but depending on the app/website scenario, one may have better tools to use.
+              </div>
+            </section>
           </div>
         </div>
       </main>
