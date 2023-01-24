@@ -26,17 +26,9 @@ const Navigation = () => {
             <Container>
                 {/* <Navbar.Brand href="/"><img className='nav-logo' alt="" src={logo}></img></Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="desktop_links">
-                        {
-                            NavLink.map(nav => <Nav.Link href={nav?.link} key={nav?.name}>{nav?.name}</Nav.Link>)
-                        }
-                    </Nav>
-                </Navbar.Collapse>
 
-                {/* Mobile slide */}
                 <Navbar.Offcanvas
-                    className="navbar-toggler"
+                    className={styles['navbar-toggler']}
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
                     placement="end"

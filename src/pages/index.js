@@ -105,7 +105,7 @@ export default function Home() {
                 or watching his football team win on Sundays (Go Bears!).
               </div>
 
-              <h2 className={styles['about-title']}>Coding Skill I Use</h2>
+              <h2 className={styles['about-title']}>Frameworks I Use</h2>
               <div className={styles['about-p']} data-lax-opacity="0 1, 900 0">
                 I primarily use Javascript, but picking up a new framework isn't a problem. Learning new things is what challenges us to be better and more creative.
               <br/>
@@ -113,7 +113,7 @@ export default function Home() {
                The frontend framework that I love to use is next.js as this makes it easier to work with and give development flexibility with cool built in functions and functionality. This framework also gives us easy access for manageable SEO configuration.
                 <br />
                 <br />
-              For backend, I like the flexability MongoDB provides is awesome and easy to configure but there are cases when using a SQL database would be a benefit. Both have great benefits but depending on the app/website scenario, one may have better tools to use.
+              For backend, the flexibility MongoDB provides is awesome and easy to configure but there are cases when using a SQL database would be a benefit. Both have great benefits but depending on the app/website scenario, one may have better tools to use.
               </div>
             </section>
           </div>
