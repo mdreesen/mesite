@@ -1,9 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image'
 import styles from '../../styles/Projects.module.css';
 
-export default function About() {
+// Import Components
+import Header from '../../components/Header';
+import Card from '../../components/Card';
 
+export default function About() {
     return (
         <div>
             <Head>
@@ -12,8 +14,9 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles['about-section-two']}>
-               
+            <main className={styles['Background']}>
+            <Header title="PROJECTS"/>
+               <Card />
             </main>
         </div>
     );

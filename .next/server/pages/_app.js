@@ -14,6 +14,7 @@ module.exports = {
 	"scrolling-active": "Navigation_scrolling-active__rmO8G",
 	"navbar-collapse": "Navigation_navbar-collapse__adciy",
 	"nav-link": "Navigation_nav-link__g1e_V",
+	"link": "Navigation_link__EZxsp",
 	"nav-logo": "Navigation_nav-logo__HtEUD",
 	"navbarMenu": "Navigation_navbarMenu___54dV",
 	"navbar-toggler": "Navigation_navbar-toggler__C4hcS"

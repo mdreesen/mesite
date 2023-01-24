@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dreesen Website</title>
+        <title>Home | Dreesen</title>
         <meta name="description" content="Website about Dreesen" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

@@ -20,6 +20,10 @@
     color: black;
 }
 
+.link {
+    color: white !important;
+}
+
 .nav-logo {
     height: 12vh;
     border-radius: 50px;

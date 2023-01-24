@@ -1,20 +1,35 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import styles from '../../styles/Card.module.css';
 
-function BasicExample() {
+// Importing card data
+import cardData from '../../utils/cardData.json';
+
+function ProjectCard() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  );
+    <div className={styles['card-container']}>
+      {
+        cardData?.card.map((card, index) => {
+          console.log(card.imageName)
+          return (
+            <Card style={{ width: '18rem', border: 'none' }} key={`card-${index}`}>
+              <Card.Img variant="top" src={`/images/${card.imageName}.webp`} />
+              <Card.Body>
+                <Card.Title style={{ display: 'flex', 'justify-content': 'center' }}>{card.title}</Card.Title>
+                <Card.Text>
+                  {card.description}
+                </Card.Text>
+                <div className={styles['link-container']}>
+                <a href={card.github}>Github</a>
+                <a href={card.demo}>Demo</a>
+                </div>
+              </Card.Body>
+            </Card>
+          )
+        })
+      }
+    </div>
+  )
 }
 
-export default BasicExample;
+export default ProjectCard;
