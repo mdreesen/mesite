@@ -1,0 +1,8 @@
+.Background {
+  padding: 5em 0;
+  background: linear-gradient(90deg, rgba(3,11,6,0.9766500350140056) 2%, rgba(15,14,14,1) 49%);
+}
+
+.title {
+  color: white;
+}
