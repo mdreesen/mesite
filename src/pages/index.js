@@ -22,7 +22,7 @@ export default function Home() {
           <span>I'm a <span className={styles['name']}>FULLSTACK DEVELOPER</span></span>
         </div>
         <div className={styles['Typewriter']}>
-          <span className={styles['name']}>CODING SKILLS</span>
+          <span>CODING SKILLS</span>
           <Typewriter
             className={styles['Typewriter']}
             onInit={(write) => {
@@ -90,11 +90,11 @@ export default function Home() {
 
             </section>
             <section className={styles['sectionTwo']}>
-            <div className={styles['aboutTitle']}>
-            <h1 className={styles['about-header']}>About</h1>
-              {aboutImage}
-            </div>
-            <h2 className={styles['about-title']}>A Bit About Me</h2>
+              <div className={styles['aboutTitle']}>
+                <h1 className={styles['about-header']}>About</h1>
+                {aboutImage}
+              </div>
+              <h2 className={styles['about-title']}>A Bit About Me</h2>
               <div className={styles['about-p']} data-lax-opacity="0 1, 900 0">
                 I started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years. I then graduated from Berkeley coding bootcamp earning my Full Stack Developer certification
                 <br></br>
@@ -108,12 +108,12 @@ export default function Home() {
               <h2 className={styles['about-title']}>Frameworks I Use</h2>
               <div className={styles['about-p']} data-lax-opacity="0 1, 900 0">
                 I primarily use Javascript, but picking up a new framework isn't a problem. Learning new things is what challenges us to be better and more creative.
-              <br/>
-              <br />
-               The frontend framework that I love to use is next.js as this makes it easier to work with and give development flexibility with cool built in functions and functionality. This framework also gives us easy access for manageable SEO configuration.
                 <br />
                 <br />
-              For backend, the flexibility MongoDB provides is awesome and easy to configure but there are cases when using a SQL database would be a benefit. Both have great benefits but depending on the app/website scenario, one may have better tools to use.
+                The frontend framework that I love to use is next.js as this makes it easier to work with and give development flexibility with cool built in functions and functionality. This framework also gives us easy access for manageable SEO configuration.
+                <br />
+                <br />
+                For backend, the flexibility MongoDB provides is awesome and easy to configure but there are cases when using a SQL database would be a benefit. Both have great benefits but depending on the app/website scenario, one may have better tools to use.
               </div>
             </section>
           </div>

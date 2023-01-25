@@ -10,12 +10,11 @@ function ProjectCard() {
     <div className={styles['card-container']}>
       {
         cardData?.card.map((card, index) => {
-          console.log(card.imageName)
           return (
             <Card style={{ width: '18rem', border: 'none' }} key={`card-${index}`}>
               <Card.Img variant="top" src={`/images/${card.imageName}.webp`} />
               <Card.Body>
-                <Card.Title style={{ display: 'flex', 'justify-content': 'center' }}>{card.title}</Card.Title>
+                <Card.Title style={{ display: 'flex', justifyContent: 'center' }}>{card.title}</Card.Title>
                 <Card.Text>
                   {card.description}
                 </Card.Text>
