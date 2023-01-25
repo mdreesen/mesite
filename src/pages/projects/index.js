@@ -15,7 +15,7 @@ export default function About() {
             </Head>
 
             <main className={styles['Background']}>
-            <Header title="PROJECTS"/>
+            <Header title="Projects"/>
                <Card />
             </main>
         </div>
