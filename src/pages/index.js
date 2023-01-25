@@ -84,7 +84,7 @@ export default function Home() {
               <div className={styles.sectionOne}>
                 <WelcomeSection />
                 <div className={styles['center']}>
-                  <span>About Me ↓</span>
+                  <span>About Me <span className={styles['arrow']}>↓</span></span>
                 </div>
               </div>
 

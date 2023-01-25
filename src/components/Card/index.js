@@ -12,7 +12,7 @@ function ProjectCard() {
         cardData?.card.map((card, index) => {
           return (
             <Card style={{ width: '18rem', border: 'none' }} key={`card-${index}`}>
-              <Card.Img variant="top" src={`/images/${card.imageName}.webp`} />
+              <Card.Img variant="top" src={`/images/${card.imageName}.webp`}  alt={card.imageName} />
               <Card.Body>
                 <Card.Title style={{ display: 'flex', justifyContent: 'center' }}>{card.title}</Card.Title>
                 <Card.Text>
