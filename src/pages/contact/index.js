@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Typewriter from 'typewriter-effect';
 import styles from '../../styles/Contact.module.css';
 
-import Header from '../../components/Header';
+import Header from '../../../components/Header';
 
 const Contact = () => {
 

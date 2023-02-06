@@ -2,8 +2,8 @@ import Head from 'next/head';
 import styles from '../../styles/Projects.module.css';
 
 // Import Components
-import Header from '../../components/Header';
-import Card from '../../components/Card';
+import Header from '../../../components/Header';
+import Card from '../../../components/Card';
 
 export default function About() {
     return (

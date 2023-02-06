@@ -1,15 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-import Particles from '../components/Particles';
 
-import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 
 import profilePic from '../../public/images/meImage.webp';
-
-const inter = Inter({ subsets: ['latin'] })
-// className={inter.className}
+import backgroundImg from '../../public/images/mountain_nosky.webp'
 
 export default function Home() {
 
@@ -62,8 +58,8 @@ export default function Home() {
       width={'fit-content'}
       height={220}
       object-fit={"cover"}
-    // blurDataURL="data:..." automatically provided
-    // placeholder="blur" // Optional blur-up while loading
+      // blurDataURL="data:..." automatically provided
+      placeholder="blur" // Optional blur-up while loading
     />
   );
 
@@ -78,8 +74,13 @@ export default function Home() {
 
       <main>
         <div className={styles['homepage']} id="particles-js">
-          <Particles></Particles>
-          <div className={styles['homepage-section-container']}>
+          {/* <Particles></Particles> */}
+          <div >
+            <Image
+            alt='Mountain Background'
+            className={styles['backgroundImg']}
+              src={backgroundImg}
+            />
             <section>
               <div className={styles.sectionOne}>
                 <WelcomeSection />
@@ -105,7 +106,7 @@ export default function Home() {
                 or watching his football team win on Sundays (Go Bears!).
               </div>
 
-              <h2 className={styles['about-title']}>Frameworks I Use</h2>
+              <h2 className={styles['about-title']}>Frameworks Used</h2>
               <div className={styles['about-p']} data-lax-opacity="0 1, 900 0">
                 I primarily use Javascript, but picking up a new framework isn't a problem. Learning new things is what challenges us to be better and more creative.
                 <br />

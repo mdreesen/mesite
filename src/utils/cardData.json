@@ -28,7 +28,7 @@
             "demo": "https://movie-21io.herokuapp.com/"
         },
         {
-            "imageName": "SmollTalk",
+            "imageName": "smollTalk",
             "title": "SmollTalk",
             "description": "This site is a CMS-style chat site similar to a Wordpress site, where communities can post and comment on other friends’ posts.",
             "about": "This project was a group project where we utilized different technology to complete this application.",
