@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.container-hero {
+  height: 50vh;
+}
+
+.hero {
+  object-fit: cover;
+  height: 50vh;
+  
+}
