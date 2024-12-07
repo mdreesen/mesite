@@ -55,7 +55,7 @@ export default function Page() {
             height={1000}
             priority
             src={'/assets/homepage.webp'}
-            className="aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
+            className="hidden md:block aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
           />
         </div>
       </div>
