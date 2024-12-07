@@ -1,4 +1,11 @@
-import Image from "next/image"
+import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Applications | White Raven Web Developer",
+  description: "Full Stack Web Developer",
+};
+
 export default function Page() {
 
   const projectOne = (

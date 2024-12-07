@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | White Raven Web Developer",
+  description: "Full Stack Web Developer",
+};
 
 export default function Page() {
   return (
@@ -47,6 +53,7 @@ export default function Page() {
             alt="White Raven homepage image of computer monitor and desk"
             width={1000}
             height={1000}
+            priority
             src={'/assets/homepage.webp'}
             className="aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
           />
