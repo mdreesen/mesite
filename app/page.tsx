@@ -18,7 +18,7 @@ export default function Page() {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <div className="hidden sm:mb-10 sm:flex">
+                <div className="sm:mb-10 sm:flex">
                   <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                     Who I am.{' '}
                     <Link href="/about" className="whitespace-nowrap font-semibold text-indigo-600">

@@ -1,8 +1,4 @@
-const stats = [
-  { label: 'Transactions every 24 hours', value: '44 million' },
-  { label: 'Assets under holding', value: '$119 trillion' },
-  { label: 'New users annually', value: '46,000' },
-]
+import Image from "next/image"
 const values = [
   {
     name: 'Innovation',
@@ -35,37 +31,8 @@ const values = [
       'Stay up-to-date with industry trends and technologies through ongoing education and training.',
   },
 ]
-const team = [
-  {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-  // More people...
-]
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Vel expedita assumenda placeat aut nisi optio voluptates quas',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    author: {
-      name: 'Michael Foster',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  // More posts...
-]
 
-
-export default function Example() {
+export default function Page() {
 
   return (
     <div className="bg-white">
@@ -189,9 +156,11 @@ export default function Example() {
 
         {/* Image section */}
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-          <img
-            alt=""
-            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+          <Image
+            alt="White Raven homepage image of computer monitor and desk"
+            width={1000}
+            height={1000}
+            src={'/assets/about.webp'}
             className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
           />
         </div>
