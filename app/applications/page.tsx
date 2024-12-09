@@ -52,7 +52,7 @@ export default function Page() {
       <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
         <div className="px-8 pt-8 sm:px-10 sm:pt-10">
           <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Digital Signage Solutions</p>
-          <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+          <p className="mt-2 max-w-lg text-sm/6 text-white max-lg:text-center">
             Ensure customer loyalty and repeat visits with advanced digital menu board solutions
           </p>
         </div>
