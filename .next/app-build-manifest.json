@@ -36,14 +36,6 @@
       "static/chunks/839-057f79f85586a4e0.js",
       "static/chunks/app/page-447245d94eb687c0.js"
     ],
-    "/applications/page": [
-      "static/chunks/webpack-4e9de2322f19dfe1.js",
-      "static/chunks/4bd1b696-91c928b09eae7286.js",
-      "static/chunks/517-595d2d6eeb83351a.js",
-      "static/chunks/main-app-26260e229caeca08.js",
-      "static/chunks/970-915b0e137e5f8591.js",
-      "static/chunks/app/applications/page-10f547bdee0231a9.js"
-    ],
     "/dark-eyes/about/page": [
       "static/chunks/webpack-4e9de2322f19dfe1.js",
       "static/chunks/4bd1b696-91c928b09eae7286.js",
@@ -51,6 +43,14 @@
       "static/chunks/main-app-26260e229caeca08.js",
       "static/chunks/970-915b0e137e5f8591.js",
       "static/chunks/app/dark-eyes/about/page-8ffb7bc6337eda08.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-4e9de2322f19dfe1.js",
+      "static/chunks/4bd1b696-91c928b09eae7286.js",
+      "static/chunks/517-595d2d6eeb83351a.js",
+      "static/chunks/main-app-26260e229caeca08.js",
+      "static/chunks/970-915b0e137e5f8591.js",
+      "static/chunks/app/about/page-124ee0f08332d8cf.js"
     ],
     "/dark-eyes/applications/page": [
       "static/chunks/webpack-4e9de2322f19dfe1.js",
@@ -60,13 +60,13 @@
       "static/chunks/970-915b0e137e5f8591.js",
       "static/chunks/app/dark-eyes/applications/page-41746146aea49bce.js"
     ],
-    "/about/page": [
+    "/applications/page": [
       "static/chunks/webpack-4e9de2322f19dfe1.js",
       "static/chunks/4bd1b696-91c928b09eae7286.js",
       "static/chunks/517-595d2d6eeb83351a.js",
       "static/chunks/main-app-26260e229caeca08.js",
       "static/chunks/970-915b0e137e5f8591.js",
-      "static/chunks/app/about/page-124ee0f08332d8cf.js"
+      "static/chunks/app/applications/page-10f547bdee0231a9.js"
     ]
   }
 }

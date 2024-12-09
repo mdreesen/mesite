@@ -4,6 +4,8 @@ const footerNavigation = {
     { name: 'Main', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Applications', href: '/applications' },
+    { name: 'Dark', href: '/dark-eyes' },
+    { name: 'Light', href: '/' },
   ],
   social: [
     {
@@ -68,6 +70,16 @@ const footerNavigation = {
       ),
     },
   ],
+}
+
+const colorsSceneLight = {
+  textColor: 'text-gray-900',
+  buttonColor: "text-gray-700"
+};
+
+const colorsSceneDark = {
+  textColor: 'text-white',
+  buttonColor: "text-gray-200"
 }
 
 export default function Footer() {

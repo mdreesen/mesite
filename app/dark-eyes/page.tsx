@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { lightscene } from "@/lib/lightscene";
 
 export const metadata: Metadata = {
   title: "Home | Dark | White Raven Web Developer",
@@ -9,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  lightscene();
 
   return (
     <div className="bg-grey-900">
