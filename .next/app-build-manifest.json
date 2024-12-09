@@ -18,15 +18,6 @@
       "static/chunks/269-c016ebbe543d7649.js",
       "static/chunks/app/layout-aee2d53ded7c0ee7.js"
     ],
-    "/dark-eyes/page": [
-      "static/chunks/webpack-4e9de2322f19dfe1.js",
-      "static/chunks/4bd1b696-91c928b09eae7286.js",
-      "static/chunks/517-595d2d6eeb83351a.js",
-      "static/chunks/main-app-26260e229caeca08.js",
-      "static/chunks/970-915b0e137e5f8591.js",
-      "static/chunks/839-057f79f85586a4e0.js",
-      "static/chunks/app/dark-eyes/page-967248d2e5b64d58.js"
-    ],
     "/page": [
       "static/chunks/webpack-4e9de2322f19dfe1.js",
       "static/chunks/4bd1b696-91c928b09eae7286.js",
@@ -44,6 +35,15 @@
       "static/chunks/970-915b0e137e5f8591.js",
       "static/chunks/app/dark-eyes/about/page-8ffb7bc6337eda08.js"
     ],
+    "/dark-eyes/page": [
+      "static/chunks/webpack-4e9de2322f19dfe1.js",
+      "static/chunks/4bd1b696-91c928b09eae7286.js",
+      "static/chunks/517-595d2d6eeb83351a.js",
+      "static/chunks/main-app-26260e229caeca08.js",
+      "static/chunks/970-915b0e137e5f8591.js",
+      "static/chunks/839-057f79f85586a4e0.js",
+      "static/chunks/app/dark-eyes/page-967248d2e5b64d58.js"
+    ],
     "/about/page": [
       "static/chunks/webpack-4e9de2322f19dfe1.js",
       "static/chunks/4bd1b696-91c928b09eae7286.js",
@@ -52,14 +52,6 @@
       "static/chunks/970-915b0e137e5f8591.js",
       "static/chunks/app/about/page-124ee0f08332d8cf.js"
     ],
-    "/dark-eyes/applications/page": [
-      "static/chunks/webpack-4e9de2322f19dfe1.js",
-      "static/chunks/4bd1b696-91c928b09eae7286.js",
-      "static/chunks/517-595d2d6eeb83351a.js",
-      "static/chunks/main-app-26260e229caeca08.js",
-      "static/chunks/970-915b0e137e5f8591.js",
-      "static/chunks/app/dark-eyes/applications/page-41746146aea49bce.js"
-    ],
     "/applications/page": [
       "static/chunks/webpack-4e9de2322f19dfe1.js",
       "static/chunks/4bd1b696-91c928b09eae7286.js",
@@ -67,6 +59,14 @@
       "static/chunks/main-app-26260e229caeca08.js",
       "static/chunks/970-915b0e137e5f8591.js",
       "static/chunks/app/applications/page-10f547bdee0231a9.js"
+    ],
+    "/dark-eyes/applications/page": [
+      "static/chunks/webpack-4e9de2322f19dfe1.js",
+      "static/chunks/4bd1b696-91c928b09eae7286.js",
+      "static/chunks/517-595d2d6eeb83351a.js",
+      "static/chunks/main-app-26260e229caeca08.js",
+      "static/chunks/970-915b0e137e5f8591.js",
+      "static/chunks/app/dark-eyes/applications/page-41746146aea49bce.js"
     ]
   }
 }

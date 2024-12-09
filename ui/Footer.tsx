@@ -4,8 +4,6 @@ const footerNavigation = {
     { name: 'Main', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Applications', href: '/applications' },
-    { name: 'Dark', href: '/dark-eyes' },
-    { name: 'Light', href: '/' },
   ],
   social: [
     {
