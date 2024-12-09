@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   description: "Full Stack Web Developer",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default async function RootLayout({
+  children}: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body

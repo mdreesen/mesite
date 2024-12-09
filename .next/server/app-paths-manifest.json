@@ -1,7 +1,10 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/dark-eyes/page": "app/dark-eyes/page.js",
   "/page": "app/page.js",
-  "/about/page": "app/about/page.js",
-  "/applications/page": "app/applications/page.js"
+  "/applications/page": "app/applications/page.js",
+  "/dark-eyes/about/page": "app/dark-eyes/about/page.js",
+  "/dark-eyes/applications/page": "app/dark-eyes/applications/page.js",
+  "/about/page": "app/about/page.js"
 }
