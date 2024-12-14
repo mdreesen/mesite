@@ -19,7 +19,7 @@ const stratacacheFeatures = {
   design: ['SASS', 'CSS'],
   language: ['Typescript', 'Javascript'],
   extraFeatures: ['Vue Options API', "Vue Composition API"],
-  details: "My position with this digital signage company was to make applications for fast food companies and am the lead developer for Tim Horton's US and Subway US."
+  details: "My position with this digital signage company is to make applications for fast food companies. I am the Lead Developer for Tim Horton's US and Subway US."
 };
 
 const farmdirectoryFeatures = {
