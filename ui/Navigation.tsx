@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { usePathname } from 'next/navigation'
 
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -103,6 +102,5 @@ export default function Navigation() {
                 </DialogPanel>
             </Dialog>
         </header>
-
     )
 }
