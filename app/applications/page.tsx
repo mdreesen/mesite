@@ -56,10 +56,10 @@ export default function Page() {
           <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
             <h3 className='text-gray-950 text-lg'>Features</h3>
 
-            {insuranceFeature.frontend.map((item) => <p key={item}>{item}</p>)}
-            {insuranceFeature.design.map((item) => <p key={item}>{item}</p>)}
-            {insuranceFeature.language.map((item) => <p key={item}>{item}</p>)}
-            {insuranceFeature.deployed.map((item) => <p key={item}>{item}</p>)}
+            {insuranceFeature.frontend.map((item: string) => <p key={item}>{item}</p>)}
+            {insuranceFeature.design.map((item: string) => <p key={item}>{item}</p>)}
+            {insuranceFeature.language.map((item: string) => <p key={item}>{item}</p>)}
+            {insuranceFeature.deployed.map((item: string) => <p key={item}>{item}</p>)}
 
             <h3 className='text-gray-950 text-lg mt-2'>About</h3>
             {insuranceFeature.details}
@@ -105,10 +105,10 @@ export default function Page() {
           <div className="max-w-lg text-sm/6 text-white max-lg:text-center py-4">
             <h3 className='text-white text-lg'>Features</h3>
 
-            {stratacacheFeatures.frontend.map((item) => <p key={item}>{item}</p>)}
-            {stratacacheFeatures.design.map((item) => <p key={item}>{item}</p>)}
-            {stratacacheFeatures.language.map((item) => <p key={item}>{item}</p>)}
-            {stratacacheFeatures.extraFeatures.map((item) => <p key={item}>{item}</p>)}
+            {stratacacheFeatures.frontend.map((item: string) => <p key={item}>{item}</p>)}
+            {stratacacheFeatures.design.map((item: string) => <p key={item}>{item}</p>)}
+            {stratacacheFeatures.language.map((item: string) => <p key={item}>{item}</p>)}
+            {stratacacheFeatures.extraFeatures.map((item: string) => <p key={item}>{item}</p>)}
 
             <h3 className='text-white text-lg mt-2'>About</h3>
             {stratacacheFeatures.details}
@@ -143,10 +143,10 @@ export default function Page() {
           <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
             <h3 className='text-gray-600 text-lg'>Features</h3>
 
-            {farmdirectoryAdminFeatures.frontend.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryAdminFeatures.design.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryAdminFeatures.language.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryAdminFeatures.database.map((item) => <p key={item}>{item}</p>)}
+            {farmdirectoryAdminFeatures.frontend.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryAdminFeatures.design.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryAdminFeatures.language.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryAdminFeatures.database.map((item: string) => <p key={item}>{item}</p>)}
 
             <h3 className='text-gray-600 text-lg mt-2'>About</h3>
             {farmdirectoryAdminFeatures.details}
@@ -186,11 +186,11 @@ export default function Page() {
           <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
             <h3 className='text-gray-600 text-lg'>Features</h3>
 
-            {farmdirectoryFeatures.frontend.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryFeatures.design.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryFeatures.language.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryFeatures.database.map((item) => <p key={item}>{item}</p>)}
-            {farmdirectoryFeatures.extraFeatures.map((item) => <p key={item}>{item}</p>)}
+            {farmdirectoryFeatures.frontend.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryFeatures.design.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryFeatures.language.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryFeatures.database.map((item: string) => <p key={item}>{item}</p>)}
+            {farmdirectoryFeatures.extraFeatures.map((item: string) => <p key={item}>{item}</p>)}
 
             <h3 className='text-gray-600 text-lg mt-2'>About</h3>
             {farmdirectoryFeatures.details}
