@@ -39,6 +39,13 @@ const farmdirectoryAdminFeatures = {
   details: "A Project to dedicate admins to have control over its users and visualize data for The Farm Directory."
 };
 
+const radminFeatures = {
+  frontend: ['Next.js'],
+  design: ['Tailwind'],
+  language: ['Typescript'],
+  details: "A Project to dedicated to businesses to help them take control of their business. They can view customers, invoices, team members, and see their revenue."
+};
+
 export default function Page() {
 
   const projectOne = (
@@ -223,6 +230,56 @@ export default function Page() {
     </div>
   );
 
+  const projectFive = (
+    <div className="relative lg:row-span-2">
+      <div className="absolute inset-px rounded-lg bg-white lg:rounded-r-[2rem]"></div>
+      <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-r-[calc(2rem+1px)]">
+        <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+          <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+            Radmin
+          </p>
+          <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+            Admin application to help businesses take control of their business.
+          </p>
+
+          <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
+            <h3 className='text-gray-600 text-lg'>Features</h3>
+
+            {radminFeatures.frontend.map((item: string) => <p key={item}>{item}</p>)}
+            {radminFeatures.design.map((item: string) => <p key={item}>{item}</p>)}
+            {radminFeatures.language.map((item: string) => <p key={item}>{item}</p>)}
+
+            <h3 className='text-gray-600 text-lg mt-2'>About</h3>
+            {radminFeatures.details}
+          </div>
+
+          <div className="mt-10 flex items-center gap-x-6">
+            <a href="https://radmin.vercel.app/" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+              Website <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div className="mt-10 flex items-center gap-x-6">
+            <a href="https://github.com/mdreesen/admin" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+              Github <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+        <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+          <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-white shadow-2xl">
+            <Image
+              alt="The Farm Directory logo"
+              width={200}
+              height={200}
+              src={'/assets/company_logos/radmin.webp'}
+              className="text-center w-[100%] object-top"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-r-[2rem]"></div>
+    </div>
+  );
+
   return (
     <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -235,6 +292,7 @@ export default function Page() {
           {projectTwo}
           {projectThree}
           {projectFour}
+          {projectFive}
         </div>
       </div>
     </div>
