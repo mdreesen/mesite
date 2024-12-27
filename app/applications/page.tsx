@@ -267,7 +267,7 @@ export default function Page() {
         <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
           <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-white shadow-2xl">
             <Image
-              alt="The Farm Directory logo"
+              alt="Radmin logo"
               width={200}
               height={200}
               src={'/assets/company_logos/radmin.webp'}
