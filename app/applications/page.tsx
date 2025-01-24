@@ -339,12 +339,12 @@ export default function Page() {
           </div>
 
           <div className="mt-10 flex items-center gap-x-6">
-            <a href="https://radmin.vercel.app/" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+            <a href="https://goals-io.vercel.app/" target="_blank" className="text-sm/6 font-semibold text-gray-900">
               Website <span aria-hidden="true">→</span>
             </a>
           </div>
           <div className="mt-10 flex items-center gap-x-6">
-            <a href="https://github.com/mdreesen/admin" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+            <a href="https://github.com/mdreesen/goals-io" target="_blank" className="text-sm/6 font-semibold text-gray-900">
               Github <span aria-hidden="true">→</span>
             </a>
           </div>
