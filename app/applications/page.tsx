@@ -74,7 +74,7 @@ const ascendFeatures = {
   database: ['MongoDB'],
   deployed: ['Vercel'],
   extraFeatures: ["Next Auth", "Mongoose", "PWA"],
-  details: "A Project to dedicated to have a better you! Set your habits, affirmations. Track your weight, water intake for the day, and books that you are reading or listening to.",
+  details: "A Project to dedicated to have a better you! Set your habits, affirmations. Track your weight, water intake for the day, set a fasting time, and books that you are reading or listening to.",
 };
 
 export default function Page() {
@@ -333,6 +333,7 @@ export default function Page() {
             {ascendFeatures.design.map((item: string) => <p key={item}>{item}</p>)}
             {ascendFeatures.language.map((item: string) => <p key={item}>{item}</p>)}
             {ascendFeatures.deployed.map((item: string) => <p key={item}>{item}</p>)}
+            {ascendFeatures.extraFeatures.map((item: string) => <p key={item}>{item}</p>)}
 
             <h3 className='text-gray-600 text-lg mt-2'>About</h3>
             {ascendFeatures.details}
