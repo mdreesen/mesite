@@ -77,8 +77,20 @@ const ascendFeatures = {
   details: "A Project to dedicated to have a better you! Set your habits, affirmations. Track your weight, water intake for the day, set a fasting time, and books that you are reading or listening to.",
 };
 
+const westernRockiesConstruction = {
+  title: "Western Rockies Construction",
+  description: "Western Rockies Construction LLC. is a locally owned and operated, veteran-owned business committed to providing top-notch interior and exterior home services.",
+  logoPath: { path: "/assets/company_logos/westernRockiesConstruction.webp", alt: 'Western Rockies Construction logo' },
+  frontend: ["Next.js"],
+  design: ['Tailwind'],
+  language: ['Typescript'],
+  deployed: ['Vercel'],
+  details: "A custom made profile for a construction/handyman site."
+}
+
 export default function Page() {
 
+  // Linwood
   const projectOne = (
     <div className="relative lg:row-span-2">
       <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
@@ -130,6 +142,7 @@ export default function Page() {
     </div>
   );
 
+  // STRATACACHE
   const projectTwo = (
     <div className="relative max-lg:row-start-1">
       <div className="absolute inset-px rounded-lg bg-gray-900 max-lg:rounded-t-[2rem]"></div>
@@ -167,6 +180,7 @@ export default function Page() {
     </div>
   );
 
+  // The Farm Directory Admin
   const projectThree = (
     <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
       <div className="absolute inset-px rounded-lg bg-white"></div>
@@ -210,6 +224,7 @@ export default function Page() {
     </div>
   );
 
+  // The Farm Directory
   const projectFour = (
     <div className="relative lg:row-span-2">
       <div className="absolute inset-px rounded-lg bg-white lg:rounded-r-[2rem]"></div>
@@ -219,7 +234,7 @@ export default function Page() {
             {farmdirectoryFeatures.title}
           </p>
           <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-            {farmdirectoryFeatures.title}
+            {farmdirectoryFeatures.description}
           </p>
 
           <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
@@ -263,6 +278,7 @@ export default function Page() {
     </div>
   );
 
+  // Radmin (Business Admin)
   const projectFive = (
     <div className="relative lg:row-span-2">
       <div className="absolute inset-px rounded-lg bg-white lg:rounded-r-[2rem]"></div>
@@ -272,7 +288,7 @@ export default function Page() {
             {radminFeatures.title}
           </p>
           <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-            {radminFeatures.title}
+            {radminFeatures.description}
           </p>
 
           <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
@@ -299,7 +315,7 @@ export default function Page() {
           </div>
         </div>
         <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-          <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-white shadow-2xl">
+          <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-[#0C1015] shadow-2xl">
             <Image
               alt={radminFeatures.logoPath.alt}
               width={200}
@@ -314,6 +330,7 @@ export default function Page() {
     </div>
   );
 
+  // Ascend
   const projectSix = (
     <div className="relative lg:row-span-2">
       <div className="absolute inset-px rounded-lg bg-white lg:rounded-r-[2rem]"></div>
@@ -323,7 +340,7 @@ export default function Page() {
           {ascendFeatures.title}
           </p>
           <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-          {ascendFeatures.title}
+          {ascendFeatures.description}
           </p>
 
           <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
@@ -351,7 +368,7 @@ export default function Page() {
           </div>
         </div>
         <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-          <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-white shadow-2xl">
+          <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-[#1B1B1B] shadow-2xl">
             <Image
               alt={ascendFeatures.logoPath.alt}
               width={200}
@@ -365,6 +382,58 @@ export default function Page() {
       <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-r-[2rem]"></div>
     </div>
   );
+
+    // Western Rockies Construction
+    const projectSeven = (
+      <div className="relative lg:row-span-2">
+        <div className="absolute inset-px rounded-lg bg-white lg:rounded-r-[2rem]"></div>
+        <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-r-[calc(2rem+1px)]">
+          <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+            <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+              {westernRockiesConstruction.title}
+            </p>
+            <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+              {westernRockiesConstruction.description}
+            </p>
+  
+            <div className="max-w-lg text-sm/6 text-gray-600 max-lg:text-center py-4">
+              <h3 className='text-gray-600 text-lg'>Features</h3>
+  
+              {westernRockiesConstruction.frontend.map((item: string) => <p key={item}>{item}</p>)}
+              {westernRockiesConstruction.design.map((item: string) => <p key={item}>{item}</p>)}
+              {westernRockiesConstruction.language.map((item: string) => <p key={item}>{item}</p>)}
+              {westernRockiesConstruction.deployed.map((item: string) => <p key={item}>{item}</p>)}
+  
+              <h3 className='text-gray-600 text-lg mt-2'>About</h3>
+              {westernRockiesConstruction.details}
+            </div>
+  
+            <div className="mt-10 flex items-center gap-x-6">
+              <a href="https://www.westernrockiesconstruction.com/" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+                Website <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div className="mt-10 flex items-center gap-x-6">
+              <a href="https://github.com/mdreesen/western-rockies-construction" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+                Github <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+          <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+            <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 shadow-2xl bg-gray-900">
+              <Image
+                alt={westernRockiesConstruction.logoPath.alt}
+                width={200}
+                height={200}
+                src={westernRockiesConstruction.logoPath.path}
+                className="text-center w-[100%] object-top"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-r-[2rem]"></div>
+      </div>
+    );
 
   return (
     <div className="bg-gray-50 py-24 sm:py-32">
@@ -380,6 +449,7 @@ export default function Page() {
           {projectFour}
           {projectFive}
           {projectSix}
+          {projectSeven}
         </div>
       </div>
     </div>
