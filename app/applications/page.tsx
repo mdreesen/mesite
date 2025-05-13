@@ -68,6 +68,7 @@ const ascendFeatures = {
   title: "Ascend",
   description: "Set goals. Achieve greatness.",
   logoPath: { path: "/assets/company_logos/ascend.webp", alt: 'Ascend logo' },
+  googlePlayBadge: { path: "/assets/badges/google_play_badge.webp", alt: 'Ascend logo' },
   frontend: ['Next.js'],
   design: ['Tailwind'],
   language: ['Typescript'],
@@ -367,9 +368,15 @@ export default function Page() {
             </a>
           </div>
 
-          <div className="mt-10 flex items-center gap-x-6">
+          <div className="flex justify-center">
             <a href="https://play.google.com/store/apps/details?id=app.vercel.goals_io.twa.pwa&hl=en_US" target="_blank" className="text-sm/6 font-semibold text-gray-900">
-              Google Play <span aria-hidden="true">→</span>
+              <Image
+                alt={ascendFeatures.googlePlayBadge.alt}
+                width={200}
+                height={200}
+                src={ascendFeatures.googlePlayBadge.path}
+                className="w-full"
+              />
             </a>
           </div>
         </div>
