@@ -45,11 +45,11 @@ const ascendFeatures = {
   logoPath: { path: "/assets/company_logos/ascend.webp", alt: 'Ascend logo' },
   googlePlayBadge: { path: "/assets/badges/google_play_badge.webp", alt: 'Ascend logo' },
   frontend: ['Nuxt.js'],
-  design: ['Tailwind'],
+  design: ['Tailwind', 'CSS'],
   language: ['Typescript'],
   database: ['MongoDB'],
   deployed: ['Vercel'],
-  extraFeatures: ["Nuxt Auth", "Mongoose", "PWA", "Google Play App"],
+  extraFeatures: ["Nuxt Auth", "Mongoose", "PWA", "Analytics", "Vercel Speed Insights", "Open Library API", "Google Play App"],
   details: "A Project dedicated to have a better you! Set your habits, affirmations. Track your weight, water intake for the day, set a fasting time, and books that you are reading or listening to.",
 };
 
@@ -329,7 +329,7 @@ export default function Page() {
     <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-base/7 font-semibold text-indigo-900">Designing for Impact</h2>
-        <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+        <p className="mx-auto my-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
           Coding for Results.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
