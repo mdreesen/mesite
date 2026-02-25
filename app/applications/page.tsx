@@ -333,8 +333,8 @@ export default function Page() {
           Coding for Results.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          {projectOne}
           {projectTwo}
+          {projectOne}
           {projectFive}
           {projectSix}
           {projectSeven}
