@@ -18,12 +18,12 @@ export default function Nav() {
     // the matching ::view-transition-group(site-header) rule in
     // globals.css, which stops it from sliding with the page content.
     <nav
-      className="fixed inset-x-0 top-0 z-[100] flex items-center justify-between px-12 py-8 bg-[linear-gradient(to_bottom,var(--color-bone)_40%,transparent)]"
+      className="fixed inset-x-0 top-0 z-[100] flex items-center justify-between lg:px-12 md:px-12 px-6 py-8 bg-[linear-gradient(to_bottom,var(--color-bone)_40%,transparent)]"
       style={{ viewTransitionName: "site-header" }}
     >
       <Link
         href="/"
-        className="font-display text-[1.1rem] font-medium text-ink"
+        className="font-display lg:text-[1.1rem] md:text-[1.1rem] font-medium text-ink text-[.7rem]"
         transitionTypes={[directionBetween(pathname, "/")]}
       >
         Michael Dreesen
