@@ -3,11 +3,15 @@
 import { useEffect, useRef } from "react";
 import Reveal from "@/components/Reveal";
 
+import { insuranceFeature, stratacacheFeatures, ascendFeatures, westernRockiesConstruction, ghostformFeatures } from '@/lib/projects';
+
 // TODO: swap in real case studies — title, one-line summary, stack, outcome.
 const PROJECTS = [
-  { tag: "SaaS Architecture", title: "Project One", body: "One-line description of the problem, the stack, and the outcome." },
-  { tag: "Performance", title: "Project Two", body: "One-line description of the problem, the stack, and the outcome." },
-  { tag: "Real-time", title: "Project Three", body: "One-line description of the problem, the stack, and the outcome." },
+  insuranceFeature, 
+  stratacacheFeatures, 
+  ascendFeatures, 
+  westernRockiesConstruction,
+  ghostformFeatures
 ];
 
 export default function Projects() {
@@ -64,7 +68,7 @@ export default function Projects() {
             <h3 className="font-display font-medium text-[1.4rem] mt-3.5 mb-2">
               {project.title}
             </h3>
-            <p className="text-stone text-[0.95rem]">{project.body}</p>
+            <p className="text-stone text-[0.95rem]">{project.description}</p>
           </div>
         ))}
       </div>

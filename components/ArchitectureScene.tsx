@@ -8,8 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const STAGES = [
   {
     index: "01 — Start",
-    title: "A single component",
-    body: "One idea, isolated, typed, and easy to reason about.",
+    title: "A single idea",
+    body: "isolated, typed, and easy to reason about.",
   },
   {
     index: "02 — Wire it up",
