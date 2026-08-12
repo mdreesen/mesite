@@ -20,10 +20,10 @@ export default function Nav() {
     >
       <Link
         href="/"
-        className="font-display lg:text-[1.1rem] md:text-[1.1rem] font-medium text-ink text-[.7rem]"
+        className="font-display leading-3 lg:text-[1.1rem] md:text-[1.1rem] font-medium text-ink text-[.8rem]"
         transitionTypes={[directionBetween(pathname, "/")]}
       >
-        Michael Dreesen
+        Michael <wbr/>Dreesen
       </Link>
       <div className="flex gap-10">
         {LINKS.map((link) => {
