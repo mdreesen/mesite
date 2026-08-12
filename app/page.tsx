@@ -1,16 +1,10 @@
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import Philosophy from "@/components/Philosophy";
 import PageTransition from "@/components/PageTransition";
 import ArchitectureScene from "@/components/ArchitectureScene";
-import Philosophy from "@/components/Philosophy";
-// const ArchitectureScene = dynamic(
-//   () => import("@/components/ArchitectureScene"),
-//   { ssr: false }
-// );
-// const Philosophy = dynamic(() => import("@/components/Philosophy"), {
-//   ssr: false,
-// });
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -18,11 +12,8 @@ export default function Home() {
       <Hero />
       <ArchitectureScene />
       <Philosophy />
-      <section className="section pt-0 pb-24">
-        <Link href="/stack" className="font-display text-[1.4rem] text-clay border-b border-transparent transition-colors hover:border-clay">
-          See the toolkit &rarr;
-        </Link>
-      </section>
+      <Projects />
+      <Contact />
     </PageTransition>
   );
 }

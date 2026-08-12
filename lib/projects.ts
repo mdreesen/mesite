@@ -7,7 +7,8 @@ export const insuranceFeature = {
   design: ['Tailwind'],
   language: ['Typescript'],
   deployed: ['Vercel'],
-  details: "Project for an insurance company to see details on who they are, what they provide, and how to help businesses."
+  details: "Project for an insurance company to see details on who they are, what they provide, and how to help businesses.",
+  github_href: "https://github.com/mdreesen/perrigo-insurance"
 }
 
 export const stratacacheFeatures = {
@@ -35,10 +36,11 @@ export const ascendFeatures = {
   deployed: ['Vercel'],
   extraFeatures: ["Nuxt Auth", "Mongoose", "PWA", "Analytics", "Vercel Speed Insights", "Open Library API", "Google Play App"],
   details: "A Project dedicated to have a better you! Set your habits, affirmations. Track your weight, water intake for the day, set a fasting time, and books that you are reading or listening to.",
+  github_href: "https://github.com/mdreesen/goals-io"
 };
 
 export const ghostformFeatures = {
-    title: "GhostForm",
+  title: "GhostForm",
   tag: "SaaS Architecture",
   description: "Solo-built two-part platform enabling realtors to capture, manage, and follow up with leads through customizable digital intake forms.",
   logoPath: { path: "/assets/company_logos/ascend.webp", alt: 'Ascend logo' },
@@ -49,7 +51,8 @@ export const ghostformFeatures = {
   database: ['MongoDB'],
   deployed: ['Vercel'],
   extraFeatures: ["Nuxt Auth", "Mongoose", "PWA", "Analytics", "Vercel Speed Insights", "Resend (email)", "Dexi (indexdb)"],
-  details: "A Project dedicated to have a better you! Set your habits, affirmations. Track your weight, water intake for the day, set a fasting time, and books that you are reading or listening to.",
+  details: "",
+  github_href: "https://github.com/mdreesen/ghostform-dashboard"
 }
 
 export const westernRockiesConstruction = {
@@ -61,5 +64,6 @@ export const westernRockiesConstruction = {
   design: ['Tailwind'],
   language: ['Typescript'],
   deployed: ['Vercel'],
-  details: "A custom made profile for a construction/handyman site."
+  details: "A custom made profile for a construction/handyman site.",
+  github_href: "https://github.com/mdreesen/western-rockies-construction"
 }

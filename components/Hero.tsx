@@ -6,11 +6,10 @@ export default function Hero() {
       <Reveal>
         <span className="eyebrow">Frontend &amp; Full-Stack Engineer</span>
         <h1 className="text-hero">
-          Michael Dreesen builds fast, well-considered products.
+          Michael Dreesen friendly neighborhood developer.
         </h1>
         <p className="mt-7 max-w-[44ch] text-stone text-[clamp(1rem,1.2vw,1.15rem)]">
-          Performance engineering and SaaS architecture — from a single
-          component to a system that scales. Based in Kalispell, Montana.
+          Performance engineering and SaaS architecture. Based in Kalispell, Montana.
         </p>
       </Reveal>
       <div className="absolute bottom-14 left-12 flex items-center gap-3 text-[0.75rem] tracking-[0.06em] text-stone">

@@ -65,6 +65,10 @@ export default function Projects() {
             <span className="text-[0.7rem] uppercase tracking-[0.08em] text-moss font-medium">
               {project.tag}
             </span>
+            
+            <div>
+              <a className="mt-5 text-[0.7rem] uppercase tracking-[0.08em] text-moss font-medium" href={project?.github_href}>Visit Github</a>
+            </div>
             <h3 className="font-display font-medium text-[1.4rem] mt-3.5 mb-2">
               {project.title}
             </h3>
