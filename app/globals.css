@@ -1,12 +1,168 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Danish palette — warm neutrals, one clay accent, one moss accent.
+   Declaring these as --color-* here generates bg-bone/text-clay/border-line
+   etc. utilities automatically — no tailwind.config.js needed in v4. */
+@theme {
+  --color-bone: #f7f3ec;
+  --color-bone-2: #efe7d8;
+  --color-ink: #221d17;
+  --color-stone: #8c8477;
+  --color-clay: #b5502c;
+  --color-moss: #5f6f52;
+  --color-line: rgba(34, 29, 23, 0.12);
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* "inline" because these reference next/font's runtime CSS variables
+   (set via the .variable className in app/layout.tsx) rather than a
+   static value Tailwind could resolve at build time. */
+@theme inline {
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: var(--color-clay);
+    color: var(--color-bone);
+  }
+}
+
+/* Small, reusable classes for the handful of things Tailwind utilities
+   don't cleanly cover: fluid clamp() type, and the pinned 3D sections'
+   shared shell + the caption stages that get toggled via plain
+   classList.toggle("is-active", ...) from the Three.js scroll handlers
+   (not React state, so a real CSS class is simpler than conditional
+   utility classes here). */
+@layer components {
+  .section {
+    @apply max-w-[1100px] mx-auto px-12 py-40;
+  }
+  .eyebrow {
+    @apply block text-[0.8rem] tracking-[0.1em] uppercase text-moss font-medium mb-5;
+  }
+
+  .text-hero {
+    @apply font-display font-medium leading-[1.08] tracking-[-0.01em] max-w-[17ch];
+    font-size: clamp(2.75rem, 7.5vw, 6rem);
+  }
+  .text-section-h2 {
+    @apply font-display font-medium max-w-[18ch] mb-14;
+    font-size: clamp(2rem, 3.6vw, 3rem);
+  }
+  .text-contact-h2 {
+    @apply font-display font-medium max-w-[14ch];
+    font-size: clamp(2rem, 5.5vw, 3.6rem);
+  }
+  .text-stage-title {
+    @apply font-display font-medium mb-2;
+    font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  }
+
+  .pin-section {
+    @apply relative h-screen flex items-center justify-center overflow-hidden bg-bone;
+  }
+  .pin-section-alt {
+    @apply bg-bone-2;
+  }
+  .pin-canvas {
+    @apply absolute inset-0 z-[1];
+  }
+  .pin-hint {
+    @apply absolute bottom-10 left-1/2 -translate-x-1/2 text-[0.7rem] uppercase tracking-[0.1em] text-stone z-[2];
+  }
+
+  .stage {
+    @apply absolute top-1/2 left-1/2 w-[min(90vw,560px)] text-center opacity-0 transition-all duration-500 ease-out pointer-events-none z-[2];
+    transform: translate(-50%, -40%);
+  }
+  .stage.is-active {
+    @apply opacity-100;
+    transform: translate(-50%, -50%);
+  }
+  .stage-index {
+    @apply block text-[0.75rem] uppercase tracking-[0.1em] text-moss font-medium mb-3;
+  }
+}
+
+@layer utilities {
+  @keyframes scrollcue {
+    0% { transform: scaleY(0.2); transform-origin: top; opacity: 0.35; }
+    50% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+    100% { transform: scaleY(0.2); transform-origin: bottom; opacity: 0.35; }
+  }
+  .animate-scrollcue {
+    animation: scrollcue 1.8s ease-in-out infinite;
+  }
+}
+
+/* ---------- View Transitions: directional page navigation ----------
+   ::view-transition-* are browser pseudo-elements with no Tailwind
+   utility equivalent, so these stay as plain CSS. */
+:root {
+  --duration-exit: 180ms;
+  --duration-enter: 260ms;
+  --duration-move: 480ms;
+  --slide-offset: 70px;
+}
+
+::view-transition {
+  pointer-events: none;
+}
+
+::view-transition-old(.nav-forward) {
+  animation: var(--duration-exit) ease-in both fade reverse,
+    var(--duration-move) ease-in-out both slide-forward reverse;
+}
+::view-transition-new(.nav-forward) {
+  animation: var(--duration-enter) ease-out var(--duration-exit) both fade,
+    var(--duration-move) ease-in-out both slide-forward;
+}
+
+::view-transition-old(.nav-back) {
+  animation: var(--duration-exit) ease-in both fade reverse,
+    var(--duration-move) ease-in-out both slide-back reverse;
+}
+::view-transition-new(.nav-back) {
+  animation: var(--duration-enter) ease-out var(--duration-exit) both fade,
+    var(--duration-move) ease-in-out both slide-back;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-forward {
+  from { translate: calc(var(--slide-offset) * -1) 0; }
+  to { translate: 0 0; }
+}
+@keyframes slide-back {
+  from { translate: var(--slide-offset) 0; }
+  to { translate: 0 0; }
+}
+
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-scrollcue { animation: none; }
+  .stage { transition: none; }
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
 }

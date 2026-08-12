@@ -11,19 +11,24 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "framer-motion": "^12.9.2",
+    "gsap": "^3.12.5",
     "next": "^16.1.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "^0.0.0-experimental-22e4f993-20260811",
+    "react-dom": "^0.0.0-experimental-22e4f993-20260811",
+    "three": "^0.160.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@types/three": "^0.160.0",
     "eslint": "^8",
     "eslint-config-next": "^16.1.6",
     "postcss": "^8",
-    "tailwindcss": "^3.4.10",
+    "tailwindcss": "^4.0.0",
     "typescript": "^5"
   }
 }

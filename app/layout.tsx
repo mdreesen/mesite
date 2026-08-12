@@ -1,39 +1,42 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Fraunces, Inter } from "next/font/google";
+import Nav from "@/components/Nav";
 import "./globals.css";
 
-import Navigation from "@/ui/Navigation";
-import Footer from '@/ui/Footer';
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+// Named distinctly from the Tailwind theme keys (--font-display /
+// --font-body) that reference them in globals.css — see the @theme
+// inline block there for why.
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "White Raven Web Developer",
-  description: "Full Stack Web Developer",
+  title: "Michael Dreesen — Frontend & Full-Stack Engineer",
+  description:
+    "Performance engineering and SaaS architecture — from a single component to a system that scales.",
 };
 
-export default async function RootLayout({
-  children}: Readonly<{
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
-}>) {
-
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navigation/>
+      <body className={`${fraunces.variable} ${inter.variable} bg-bone text-ink font-body antialiased`}>
+        <Nav />
         {children}
-        <Footer/>
       </body>
     </html>
   );
