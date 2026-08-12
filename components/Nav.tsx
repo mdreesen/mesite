@@ -6,7 +6,7 @@ import { directionBetween } from "@/lib/route-order";
 
 const LINKS = [
   { href: "/stack", label: "Stack" },
-  { href: "/work", label: "Work" },
+  { href: "/work", label: "Apps" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -14,9 +14,6 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    // viewTransitionName anchors this element across navigations — see
-    // the matching ::view-transition-group(site-header) rule in
-    // globals.css, which stops it from sliding with the page content.
     <nav
       className="fixed inset-x-0 top-0 z-[100] flex items-center justify-between lg:px-12 md:px-12 px-6 py-8 bg-[linear-gradient(to_bottom,var(--color-bone)_40%,transparent)]"
       style={{ viewTransitionName: "site-header" }}
