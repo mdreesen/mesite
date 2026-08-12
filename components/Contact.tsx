@@ -20,13 +20,15 @@ export default function Contact() {
             mdreesen.com
           </a>
           <a
-            href="www.linkedin.com/in/mdreesen"
+            href="https://linkedin.com/in/mdreesen"
+            target="_blank"
             className="text-[0.9rem] text-stone border-b border-transparent pb-0.5 transition-colors hover:text-clay hover:border-clay"
           >
             LinkedIn
           </a>
           <a
             href="https://github.com/mdreesen"
+            target="_blank"
             className="text-[0.9rem] text-stone border-b border-transparent pb-0.5 transition-colors hover:text-clay hover:border-clay"
           >
             GitHub
