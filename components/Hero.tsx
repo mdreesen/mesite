@@ -6,7 +6,7 @@ export default function Hero() {
       <Reveal>
         <span className="eyebrow">Frontend &amp; Full-Stack Engineer</span>
         <h1 className="text-hero">
-          Michael Dreesen friendly neighborhood developer.
+          Michael Dreesen, friendly neighborhood developer.
         </h1>
         <p className="mt-7 max-w-[44ch] text-stone text-[clamp(1rem,1.2vw,1.15rem)]">
           Performance engineering and SaaS architecture. Based in Kalispell, Montana.

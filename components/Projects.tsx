@@ -7,9 +7,9 @@ import { insuranceFeature, stratacacheFeatures, ascendFeatures, westernRockiesCo
 
 // TODO: swap in real case studies — title, one-line summary, stack, outcome.
 const PROJECTS = [
-  insuranceFeature, 
-  stratacacheFeatures, 
-  ascendFeatures, 
+  insuranceFeature,
+  stratacacheFeatures,
+  ascendFeatures,
   westernRockiesConstruction,
   ghostformFeatures
 ];
@@ -65,14 +65,28 @@ export default function Projects() {
             <span className="text-[0.7rem] uppercase tracking-[0.08em] text-moss font-medium">
               {project.tag}
             </span>
-            
-            <div>
-              <a className="mt-5 text-[0.7rem] uppercase tracking-[0.08em] text-moss font-medium" href={project?.github_href}>Visit Github</a>
-            </div>
+
+            {project?.github_href && (
+              <div>
+                <a className="mt-5 text-[0.7rem] uppercase tracking-[0.08em] text-moss font-medium" href={project?.github_href}>Visit Github</a>
+              </div>
+            )}
+                        {project?.site_url && (
+              <div>
+                <a className="mt-5 text-[0.7rem] uppercase tracking-[0.08em] text-moss font-medium" href={project?.site_url}>Visit Site</a>
+              </div>
+            )}
             <h3 className="font-display font-medium text-[1.4rem] mt-3.5 mb-2">
               {project.title}
             </h3>
             <p className="text-stone text-[0.95rem]">{project.description}</p>
+
+            <div>
+              <h4 className="font-display font-medium text-[1rem] mt-3.5 mb-2">
+                Takeaways
+              </h4>
+              <p className="text-stone text-[0.95rem]">{project.learned}</p>
+            </div>
           </div>
         ))}
       </div>
